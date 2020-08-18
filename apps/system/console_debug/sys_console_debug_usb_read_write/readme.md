@@ -39,6 +39,8 @@ The following table shows the target hardware for the application projects.
 ### Setting up [SAM E70 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/DM320113)
 
 - Connect the Debug USB port on the board to the computer using a micro USB cable
+- Jumper J203 must be shorted between PB08 and VBUS (positions 2 and 3)
+- Use TARGET USB J202 connector on the board to connect the USB Device to the the USB Host PC
 
 ## Running the Application
 
