@@ -1,6 +1,6 @@
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
-# SPI Driver asynchronous - multi client
+# SPI Driver asynchronous - multi slave
 
 This example demonstrates how to use single instance of the SPI driver in asynchronous mode to communicate with multiple EEPROMs.
 
@@ -67,6 +67,6 @@ Refer to the following table for LED name:
 
 | Board | LED Name |
 | ----- | -------- |
-|  [SAM E70 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/DM320113) | LED1 |
+|  [SAM E70 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/DM320113) | LED2 |
 |  [SAM V71 Xplained Ultra Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamv71-xult) | LED0 |
 |||
