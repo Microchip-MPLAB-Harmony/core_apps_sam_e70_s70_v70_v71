@@ -47,14 +47,14 @@ The following table shows the target hardware for the application projects.
 ### Setting up [SAM E70 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/DM320113)
 
 - To run this application, following additional hardware is required
-  - SD-Card formatted to fat file system and containing a non-empty file named "FILE.txt"
+  - SD-Card formatted to fat file system
 
 - Connect the Debug USB port on the board to the computer using a micro USB cable
 
 ### Setting up [SAM V71 Xplained Ultra Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamv71-xult)
 
 - To run this application, following additional hardware is required
-  - SD-Card formatted to fat file system and containing a non-empty file named "FILE.txt"
+  - SD-Card formatted to fat file system
 
 - Connect the Debug USB port on the board to the computer using a micro USB cable
 
