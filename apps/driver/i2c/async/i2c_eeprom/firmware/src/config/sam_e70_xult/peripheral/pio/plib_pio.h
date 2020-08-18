@@ -66,9 +66,9 @@
 #define EEPROM_WP_Set()               (PIOC_REGS->PIO_SODR = (1<<11))
 #define EEPROM_WP_Clear()             (PIOC_REGS->PIO_CODR = (1<<11))
 #define EEPROM_WP_Toggle()            (PIOC_REGS->PIO_ODSR ^= (1<<11))
-#define EEPROM_WP_Get()               ((PIOC_REGS->PIO_PDSR >> 11) & 0x1)
 #define EEPROM_WP_OutputEnable()      (PIOC_REGS->PIO_OER = (1<<11))
 #define EEPROM_WP_InputEnable()       (PIOC_REGS->PIO_ODR = (1<<11))
+#define EEPROM_WP_Get()               ((PIOC_REGS->PIO_PDSR >> 11) & 0x1)
 #define EEPROM_WP_PIN                  PIO_PIN_PC11
 
 
