@@ -340,6 +340,22 @@ bool USART0_ReadIsBusy( void )
     return usart0Obj.rxBusyStatus;
 }
 
+bool USART0_ReadAbort(void)
+{
+    if (usart0Obj.rxBusyStatus == true)
+    {        
+        /* Disable Read, Overrun, Parity and Framing error interrupts */
+        USART0_REGS->US_IDR = (US_IDR_USART_RXRDY_Msk | US_IDR_USART_FRAME_Msk | US_IDR_USART_PARE_Msk | US_IDR_USART_OVRE_Msk);	
+        
+        usart0Obj.rxBusyStatus = false;                
+        
+        /* If required application should read the num bytes processed prior to calling the read abort API */        
+        usart0Obj.rxSize = usart0Obj.rxProcessedSize = 0;
+    }
+    
+    return true;
+}
+
 size_t USART0_WriteCountGet( void )
 {
     return usart0Obj.txProcessedSize;
