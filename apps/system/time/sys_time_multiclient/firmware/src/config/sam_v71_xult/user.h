@@ -58,8 +58,8 @@ extern "C" {
 // Section: User Configuration macros
 // *****************************************************************************
 // *****************************************************************************
-#define SWITCH_GET()                 SWITCH1_Get()
-#define SWITCH_STATUS_PRESSED        SWITCH1_STATE_PRESSED
+#define SWITCH_GET()                 SWITCH0_Get()
+#define SWITCH_STATUS_PRESSED        SWITCH0_STATE_PRESSED
 
 #define LED_ON()                    LED0_On()
 #define LED_OFF()                   LED0_Off()
