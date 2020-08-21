@@ -66,9 +66,9 @@
 #define GPIO_PD25_Set()               (PIOD_REGS->PIO_SODR = (1<<25))
 #define GPIO_PD25_Clear()             (PIOD_REGS->PIO_CODR = (1<<25))
 #define GPIO_PD25_Toggle()            (PIOD_REGS->PIO_ODSR ^= (1<<25))
-#define GPIO_PD25_Get()               ((PIOD_REGS->PIO_PDSR >> 25) & 0x1)
 #define GPIO_PD25_OutputEnable()      (PIOD_REGS->PIO_OER = (1<<25))
 #define GPIO_PD25_InputEnable()       (PIOD_REGS->PIO_ODR = (1<<25))
+#define GPIO_PD25_Get()               ((PIOD_REGS->PIO_PDSR >> 25) & 0x1)
 #define GPIO_PD25_PIN                  PIO_PIN_PD25
 
 
