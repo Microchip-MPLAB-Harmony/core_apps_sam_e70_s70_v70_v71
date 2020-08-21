@@ -10,13 +10,13 @@ This example uses the I2C driver in asynchronous mode and demonstrates the multi
 
 Two application tasks are created which act as clients to the same instance of the I2C driver:
 
-APP_I2C_TEMP_SENSOR_Tasks:
+- **APP_I2C_TEMP_SENSOR_Tasks:**
+    - Reads temperature every 1 second, prints on console and notifies the EEPROM client
+    - The Time System Service is used to generate a callback every 1 second
 
-Reads temperature every 1 second, prints on console and notifies the EEPROM client. The Time System Service is used to generate a callback every 1 second
-
-APP_I2C_EEPROM_Tasks:
-
-Writes temperature values to the EEPROM once the temperature read complete notification is received. The task also reads and prints the last five saved temperature data from the EEPROM when user enters any key on the console.
+- **APP_I2C_EEPROM_Tasks:**
+    - Writes temperature values to the EEPROM once the temperature read complete notification is received
+    - The task also reads and prints the last five saved temperature data from the EEPROM when user enters any key on the console
 
 ## Downloading and building the application
 
