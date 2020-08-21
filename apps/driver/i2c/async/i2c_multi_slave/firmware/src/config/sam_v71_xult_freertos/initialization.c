@@ -251,7 +251,7 @@ void SYS_Initialize ( void* data )
 	BSP_Initialize();
 	TWIHS0_Initialize();
 
-	USART1_Initialize();
+    USART1_Initialize();
 
 
     /* Initialize I2C0 Driver Instance */
