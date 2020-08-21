@@ -58,8 +58,8 @@ void SPI0_Initialize( void )
     /* Enable Master mode, select particular NPCS line for chip select and disable mode fault detection */
     SPI0_REGS->SPI_MR = SPI_MR_MSTR_Msk | SPI_MR_PCS_NPCS0 | SPI_MR_MODFDIS_Msk;
 
-    /* Set up clock Polarity, data phase, Communication Width, Baud Rate and Chip select active after transfer */
-    SPI0_REGS->SPI_CSR[0] = SPI_CSR_CPOL_IDLE_LOW | SPI_CSR_NCPHA_VALID_LEADING_EDGE | SPI_CSR_BITS_8_BIT | SPI_CSR_SCBR(150) | SPI_CSR_CSAAT_Msk;
+    /* Set up clock Polarity, data phase, Communication Width, Baud Rate */
+    SPI0_REGS->SPI_CSR[0] = SPI_CSR_CPOL_IDLE_LOW | SPI_CSR_NCPHA_VALID_LEADING_EDGE | SPI_CSR_BITS_8_BIT | SPI_CSR_SCBR(150);
 
     /* Initialize global variables */
     spi0Obj.transferIsBusy = false;
@@ -280,8 +280,6 @@ void SPI0_InterruptHandler( void )
              */
 
             isLastByteTransferInProgress = true;
-            /* Set Last transfer to deassert NPCS after the last byte written in TDR has been transferred. */
-            SPI0_REGS->SPI_CR = SPI_CR_LASTXFER_Msk;
         }
         else if (spi0Obj.rxCount == spi0Obj.rxSize)
         {
