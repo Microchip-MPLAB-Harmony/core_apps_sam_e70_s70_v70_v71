@@ -76,6 +76,7 @@ const DRV_USART_PLIB_INTERFACE drvUsart1PlibAPI = {
     .read = (DRV_USART_PLIB_READ)USART1_Read,
     .readIsBusy = (DRV_USART_PLIB_READ_IS_BUSY)USART1_ReadIsBusy,
     .readCountGet = (DRV_USART_PLIB_READ_COUNT_GET)USART1_ReadCountGet,
+	.readAbort = (DRV_USART_PLIB_READ_ABORT)USART1_ReadAbort,
     .writeCallbackRegister = (DRV_USART_PLIB_WRITE_CALLBACK_REG)USART1_WriteCallbackRegister,
     .write = (DRV_USART_PLIB_WRITE)USART1_Write,
     .writeIsBusy = (DRV_USART_PLIB_WRITE_IS_BUSY)USART1_WriteIsBusy,
@@ -128,6 +129,7 @@ const DRV_USART_PLIB_INTERFACE drvUsart0PlibAPI = {
     .read = (DRV_USART_PLIB_READ)USART0_Read,
     .readIsBusy = (DRV_USART_PLIB_READ_IS_BUSY)USART0_ReadIsBusy,
     .readCountGet = (DRV_USART_PLIB_READ_COUNT_GET)USART0_ReadCountGet,
+	.readAbort = (DRV_USART_PLIB_READ_ABORT)USART0_ReadAbort,
     .writeCallbackRegister = (DRV_USART_PLIB_WRITE_CALLBACK_REG)USART0_WriteCallbackRegister,
     .write = (DRV_USART_PLIB_WRITE)USART0_Write,
     .writeIsBusy = (DRV_USART_PLIB_WRITE_IS_BUSY)USART0_WriteIsBusy,
@@ -230,9 +232,9 @@ void SYS_Initialize ( void* data )
 
 	WDT_REGS->WDT_MR = WDT_MR_WDDIS_Msk; 		// Disable WDT 
 
-	USART1_Initialize();
+    USART1_Initialize();
 
-	USART0_Initialize();
+    USART0_Initialize();
 
 
     sysObj.drvUsart1 = DRV_USART_Initialize(DRV_USART_INDEX_1, (SYS_MODULE_INIT *)&drvUsart1InitData);
