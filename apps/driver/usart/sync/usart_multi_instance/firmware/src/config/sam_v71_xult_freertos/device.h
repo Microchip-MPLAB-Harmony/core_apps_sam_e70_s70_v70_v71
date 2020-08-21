@@ -1,20 +1,21 @@
 /*******************************************************************************
-  User Configuration Header
+  Device Header File
+
+  Company:
+    Microchip Technology Inc.
 
   File Name:
-    user.h
+    device.h
 
   Summary:
-    Build-time configuration header for the user defined by this project.
+    This file includes the selected device from within the project.
+    The device will provide access to respective device packs.
 
   Description:
-    An MPLAB Project may have multiple configurations.  This file defines the
-    build-time options for a single configuration.
-
-  Remarks:
-    It only provides macro definitions for build-time configuration options
+    None
 
 *******************************************************************************/
+
 // DOM-IGNORE-BEGIN
 /*******************************************************************************
 * Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
@@ -40,35 +41,15 @@
 *******************************************************************************/
 // DOM-IGNORE-END
 
-#ifndef USER_H
-#define USER_H
-
-#include "bsp/bsp.h"
-
-// DOM-IGNORE-BEGIN
-#ifdef __cplusplus  // Provide C++ Compatibility
-
-extern "C" {
-
+#pragma GCC diagnostic push
+#ifndef __cplusplus
+#pragma GCC diagnostic ignored "-Wnested-externs"
 #endif
-// DOM-IGNORE-END
+#pragma GCC diagnostic ignored "-Wsign-conversion"
+#pragma GCC diagnostic ignored "-Wattributes"
+#pragma GCC diagnostic ignored "-Wundef"
+#include "atsamv71q21b.h"
+#pragma GCC diagnostic pop
+#include "device_cache.h"
+#include "toolchain_specifics.h"
 
-// *****************************************************************************
-// *****************************************************************************
-// Section: User Configuration macros
-// *****************************************************************************
-// *****************************************************************************
-#define LED_ON()                    LED0_On()
-#define LED_OFF()                   LED0_Off()
-#define LED_TOGGLE()                LED0_Toggle()
-
-//DOM-IGNORE-BEGIN
-#ifdef __cplusplus
-}
-#endif
-//DOM-IGNORE-END
-
-#endif // USER_H
-/*******************************************************************************
- End of File
-*/
