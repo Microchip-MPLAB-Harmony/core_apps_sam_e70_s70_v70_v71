@@ -1,3 +1,10 @@
+---
+parent: Harmony 3 driver and system service application examples for SAM E70/S70/V70/V71 family
+title: Console Debug System Service using UART 
+has_children: false
+has_toc: false
+---
+
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
 # Console Debug System Service using UART

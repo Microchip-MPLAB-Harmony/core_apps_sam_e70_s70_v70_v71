@@ -1,3 +1,10 @@
+---
+parent: Harmony 3 driver and system service application examples for SAM E70/S70/V70/V71 family
+title: SPI EEPROM AT25 driver - EEPROM Read Write 
+has_children: false
+has_toc: false
+---
+
 [![MCHP](https://www.microchip.com/ResourcePackages/Microchip/assets/dist/images/logo.png)](https://www.microchip.com)
 
 # SPI EEPROM AT25 driver - EEPROM Read Write
