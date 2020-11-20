@@ -1,0 +1,73 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.core_apps_sam_e70_s70_v70_v71_fs_nvm_sqi_fat_sam_e70_xult_freertos",
+		"version": "3.0.1",
+		"displayName": "FAT filesystem using NVM and SST26 Media Example for SAM E70/S70/V70/V71 Family",
+		"projectName": "nvm_sqi_fat_sam_e70_xult_freertos",
+		"shortDescription": "This application shows an example of using the FAT File System to access multiple files across multiple media (NVM, SQI FLASH).",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=5.40.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=2.40.0"
+			}
+		],
+		"dfp": {
+			"name": "SAME70_DFP",
+			"semverRange": "^4.2.59"
+		},
+		"configurator": {
+			"name": "MHC",
+			"semverRange": ">=3.5.1"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "ATSAME70Q21B",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit", "SAM E70 Xplained Ultra Evaluation Kit"
+			],
+			[
+				"Harmony", "Middleware", "File System (FS)", "NVM_SQI_FAT"
+			],
+			[
+				"File System (FS)", "NVM_SQI_FAT"
+			]
+		],
+		"peripherals": [
+			"NVM_SQI_FAT"
+		],
+		"keywords": [
+			"MHC",
+			"Harmony",
+			"File System",
+			"ATSAME70Q21B",
+			"SAM E70/S70/V70/V71 Family"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}
