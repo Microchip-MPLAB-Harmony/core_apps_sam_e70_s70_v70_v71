@@ -45,6 +45,7 @@
 #define USER_H
 
 #include "bsp/bsp.h"
+#include "peripheral/pio/plib_pio.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
@@ -62,6 +63,8 @@ extern "C" {
 #define LED_ON()        LED0_On()
 #define LED_OFF()       LED0_Off()
 #define LED_TOGGLE()    LED0_Toggle()
+    
+#define SWITCH_PIN      SWITCH0_PIN
 
 //DOM-IGNORE-BEGIN
 #ifdef __cplusplus

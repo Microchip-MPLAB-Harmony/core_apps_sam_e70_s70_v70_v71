@@ -62,6 +62,17 @@
 // *****************************************************************************
 
 
+/*** Macros for SWITCH0 pin ***/
+#define SWITCH0_Set()               (PIOA_REGS->PIO_SODR = (1<<9))
+#define SWITCH0_Clear()             (PIOA_REGS->PIO_CODR = (1<<9))
+#define SWITCH0_Toggle()            (PIOA_REGS->PIO_ODSR ^= (1<<9))
+#define SWITCH0_OutputEnable()      (PIOA_REGS->PIO_OER = (1<<9))
+#define SWITCH0_InputEnable()       (PIOA_REGS->PIO_ODR = (1<<9))
+#define SWITCH0_Get()               ((PIOA_REGS->PIO_PDSR >> 9) & 0x1)
+#define SWITCH0_PIN                  PIO_PIN_PA9
+#define SWITCH0_InterruptEnable()   (PIOA_REGS->PIO_IER = (1<<9))
+#define SWITCH0_InterruptDisable()  (PIOA_REGS->PIO_IDR = (1<<9))
+
 
 // *****************************************************************************
 /* PIO Port
@@ -229,6 +240,7 @@ typedef enum
 
 } PIO_PIN;
 
+typedef  void (*PIO_PIN_CALLBACK) ( PIO_PIN pin, uintptr_t context);
 
 void PIO_Initialize(void);
 
@@ -253,6 +265,29 @@ void PIO_PortToggle(PIO_PORT port, uint32_t mask);
 void PIO_PortInputEnable(PIO_PORT port, uint32_t mask);
 
 void PIO_PortOutputEnable(PIO_PORT port, uint32_t mask);
+
+void PIO_PortInterruptEnable(PIO_PORT port, uint32_t mask);
+
+void PIO_PortInterruptDisable(PIO_PORT port, uint32_t mask);
+
+// *****************************************************************************
+// *****************************************************************************
+// Section: Local Data types and Prototypes
+// *****************************************************************************
+// *****************************************************************************
+
+typedef struct {
+
+    /* target pin */
+    PIO_PIN                 pin;
+
+    /* Callback for event on target pin*/
+    PIO_PIN_CALLBACK        callback;
+
+    /* Callback Context */
+    uintptr_t               context;
+
+} PIO_PIN_CALLBACK_OBJ;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -300,6 +335,21 @@ static inline void PIO_PinOutputEnable(PIO_PIN pin)
     PIO_PortOutputEnable((PIO_PORT)(PIOA_BASE_ADDRESS + (0x200 * (pin>>5))), 0x1 << (pin & 0x1F));
 }
 
+static inline void PIO_PinInterruptEnable(PIO_PIN pin)
+{
+    PIO_PortInterruptEnable((PIO_PORT)(PIOA_BASE_ADDRESS + (0x200 * (pin>>5))), 0x1 << (pin & 0x1F));
+}
+
+static inline void PIO_PinInterruptDisable(PIO_PIN pin)
+{
+    PIO_PortInterruptDisable((PIO_PORT)(PIOA_BASE_ADDRESS + (0x200 * (pin>>5))), 0x1 << (pin & 0x1F));
+}
+
+bool PIO_PinInterruptCallbackRegister(
+    PIO_PIN pin,
+    const   PIO_PIN_CALLBACK callBack,
+    uintptr_t context
+);
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
