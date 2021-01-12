@@ -59,12 +59,16 @@
 // Section: Global Data Definitions
 // *****************************************************************************
 // *****************************************************************************
+#if SYS_FS_AUTOMOUNT_ENABLE
+    #define APP_MOUNT_NAME          SYS_FS_MEDIA_IDX0_MOUNT_NAME_VOLUME_IDX0
+    #define APP_DEVICE_NAME         SYS_FS_MEDIA_IDX0_DEVICE_NAME_VOLUME_IDX0
+#else
+    #define APP_MOUNT_NAME          "/mnt/myDrive1"
+    #define APP_DEVICE_NAME         "/dev/mtda1"
+    #define APP_FS_TYPE             FAT
+#endif
 
-#define APP_MOUNT_NAME          "/mnt/myDrive1"
-#define APP_DEVICE_NAME         "/dev/mtda1"
-#define APP_FS_TYPE             FAT
-
-#define APP_FILE_NAME           "newfile.txt"
+#define APP_FILE_NAME               "newfile.txt"
 
 // *****************************************************************************
 /* Application Data
@@ -86,14 +90,63 @@ APP_DATA CACHE_ALIGN appData;
 /* Work buffer used by FAT FS during Format */
 uint8_t CACHE_ALIGN work[SYS_FS_FAT_MAX_SS];
 
+SYS_FS_FORMAT_PARAM formatOpt;
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application Callback Functions
 // *****************************************************************************
 // *****************************************************************************
+#if SYS_FS_AUTOMOUNT_ENABLE
 
-/* TODO:  Add any necessary callback functions.
-*/
+void APP_SysFSEventHandler(SYS_FS_EVENT event,void* eventData,uintptr_t context)
+{
+    switch(event)
+    {
+        /* If the event is mount then check which media has been mounted */
+        case SYS_FS_EVENT_MOUNT:
+            if(strcmp((const char *)eventData, APP_MOUNT_NAME) == 0)
+            {
+                appData.diskMounted = true;
+            }
+
+            break;
+
+        case SYS_FS_EVENT_MOUNT_WITH_NO_FILESYSTEM:
+        {
+            if(strcmp((const char *)eventData, APP_MOUNT_NAME) == 0)
+            {
+                appData.diskFormatRequired = true;
+            }
+            break;
+        }
+
+        /* If the event is unmount then check which media has been unmount */
+        case SYS_FS_EVENT_UNMOUNT:
+            if(strcmp((const char *)eventData, APP_MOUNT_NAME) == 0)
+            {
+                appData.diskMounted = false;
+                appData.diskFormatRequired = false;
+
+                if (appData.state == APP_IDLE)
+                {
+                    appData.state = APP_MOUNT_WAIT;
+                }
+                else
+                {
+                    appData.state = APP_ERROR;
+                }
+                LED_OFF();
+            }
+
+            break;
+
+        case SYS_FS_EVENT_ERROR:
+        default:
+            break;
+    }
+}
+#endif
 
 // *****************************************************************************
 // *****************************************************************************
@@ -124,13 +177,19 @@ void APP_Initialize ( void )
 {
     uint32_t i;
 
-    /* Initialize the app state to wait for media attach. */
-    appData.state = APP_MOUNT_DISK;
-
     for (i = 0; i < BUFFER_SIZE; i++)
     {
         appData.writeBuffer[i] = i;
     }
+
+    /* Initialize the app state to wait for media attach. */
+#if SYS_FS_AUTOMOUNT_ENABLE
+    appData.state = APP_MOUNT_WAIT;
+
+    SYS_FS_EventHandlerSet(APP_SysFSEventHandler,(uintptr_t)NULL);
+#else
+    appData.state = APP_MOUNT_DISK;
+#endif
 }
 
 /******************************************************************************
@@ -143,11 +202,26 @@ void APP_Initialize ( void )
 
 void APP_Tasks ( void )
 {
-    SYS_FS_FORMAT_PARAM opt;
-
     /* Check the application's current state. */
     switch ( appData.state )
     {
+#if SYS_FS_AUTOMOUNT_ENABLE
+        case APP_MOUNT_WAIT:
+        {
+            if (appData.diskFormatRequired == true)
+            {
+                /* Mount was successful. Format the disk. */
+                appData.state = APP_FORMAT_DISK;
+            }
+            else if (appData.diskMounted == true)
+            {
+                /* Mount was successful. Open the file. */
+                appData.state = APP_OPEN_FILE;
+            }
+
+            break;
+        }
+#else
         case APP_MOUNT_DISK:
         {
             /* Mount the disk */
@@ -159,19 +233,28 @@ void APP_Tasks ( void )
             }
             else
             {
-                /* Mount was successful. Format the disk. */
-                appData.state = APP_FORMAT_DISK;
+                /* Check If Mount was successful with no file system on media */
+                if (SYS_FS_Error() == SYS_FS_ERROR_NO_FILESYSTEM)
+                {
+                    /* Format the disk. */
+                    appData.state = APP_FORMAT_DISK;
+                }
+                else
+                {
+                    appData.state = APP_OPEN_FILE;
+                }
             }
 
             break;
         }
+#endif
 
         case APP_FORMAT_DISK:
         {
-            opt.fmt = SYS_FS_FORMAT_FAT;
-            opt.au_size = 0;
+            formatOpt.fmt = SYS_FS_FORMAT_FAT;
+            formatOpt.au_size = 0;
 
-            if (SYS_FS_DriveFormat (APP_MOUNT_NAME, &opt, (void *)work, SYS_FS_FAT_MAX_SS) != SYS_FS_RES_SUCCESS)
+            if (SYS_FS_DriveFormat (APP_MOUNT_NAME, &formatOpt, (void *)work, SYS_FS_FAT_MAX_SS) != SYS_FS_RES_SUCCESS)
             {
                 /* Format of the disk failed. */
                 appData.state = APP_ERROR;

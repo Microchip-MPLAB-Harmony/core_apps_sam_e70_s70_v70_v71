@@ -90,8 +90,13 @@ extern "C" {
 
 typedef enum
 {
-    /* The app mounts the disk */
+#if SYS_FS_AUTOMOUNT_ENABLE
+    /* Wait for disk Mount */
+    APP_MOUNT_WAIT = 0,
+#else
+    /* Mount the disk */
     APP_MOUNT_DISK = 0,
+#endif
 
     /* The app formats the disk. */
     APP_FORMAT_DISK,
@@ -168,6 +173,10 @@ typedef struct
     SYS_FS_FSTAT fileStatus;
 
     long fileSize;
+
+    bool diskMounted;
+
+    bool diskFormatRequired;
 
 } APP_DATA;
 
@@ -253,10 +262,10 @@ void APP_Initialize ( void );
 void APP_Tasks( void );
 
 
-#endif /* APP_H */
-
 //DOM-IGNORE-BEGIN
 #ifdef __cplusplus
 }
 #endif
 //DOM-IGNORE-END
+
+#endif /* APP_H */
