@@ -129,6 +129,7 @@ SYSTEM_OBJECTS sysObj;
 void SYS_Initialize ( void* data )
 {
 
+
     EFC_Initialize();
   
     CLOCK_Initialize();

@@ -1,0 +1,81 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: qspi}
+children:
+- type: Symbols
+  children:
+  - type: Comment
+    attributes: {id: QSPI_CLK_COMMENT}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: text}
+        children:
+        - {type: Value, value: '*** QSPI Clock Frequency Is Set To 15.0 MHz for Master
+            Clock Frequency At 150.0 MHz'}
+  - type: Integer
+    attributes: {id: QSPI_CLK_FREQ}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: qspi, value: '15000000'}
+  - type: KeyValueSet
+    attributes: {id: QSPI_CPOL}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: qspi, value: '0'}
+  - type: KeyValueSet
+    attributes: {id: QSPI_NBBITS}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '1'}
+  - type: Integer
+    attributes: {id: QSPI_SCBR}
+    children:
+    - type: Values
+      children:
+      - type: User
+        attributes: {value: '9'}
+  - type: KeyValueSet
+    attributes: {id: QSPI_SMM}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: qspi, value: '1'}
+  - type: Hex
+    attributes: {id: SPI_DUMMY_DATA}
+    children:
+    - type: Attributes
+      children:
+      - type: Long
+        attributes: {id: max}
+        children:
+        - {type: Value, value: '255'}
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: qspi, value: '255'}
+- type: Attachments
+  children:
+  - type: DirectCapability
+    attributes: {id: QSPI_SPI}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: targetComponentID}
+        children:
+        - {type: Value, value: drv_sst26}
+      - type: String
+        attributes: {id: targetAttachmentID}
+        children:
+        - {type: Value, value: drv_sst26_SPI_dependency}
+- type: ElementPosition
+  attributes: {x: '37', y: '174', id: qspi}
