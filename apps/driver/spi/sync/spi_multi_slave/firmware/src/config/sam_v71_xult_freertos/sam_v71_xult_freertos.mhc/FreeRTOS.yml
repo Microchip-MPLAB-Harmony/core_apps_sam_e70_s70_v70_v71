@@ -1,0 +1,6 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: FreeRTOS}
+children:
+- type: ElementPosition
+  attributes: {x: '27', y: '149', id: FreeRTOS}
