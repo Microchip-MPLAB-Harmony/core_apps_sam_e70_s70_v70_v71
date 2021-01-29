@@ -5,10 +5,10 @@
     Microchip Technology Inc.
 
   File Name
-    plib_twihs0.h
+    plib_twihs0_master.h
 
   Summary
-    TWIHS peripheral library interface.
+    TWIHS Master peripheral library interface.
 
   Description
     This file defines the interface to the TWIHS peripheral library.  This
@@ -44,8 +44,8 @@
 *******************************************************************************/
 // DOM-IGNORE-END
 
-#ifndef PLIB_TWIHS0_H
-#define PLIB_TWIHS0_H
+#ifndef PLIB_TWIHS0_MASTER_H
+#define PLIB_TWIHS0_MASTER_H
 
 // *****************************************************************************
 // *****************************************************************************
@@ -53,7 +53,7 @@
 // *****************************************************************************
 // *****************************************************************************
 
-#include "plib_twihs_master.h"
+#include "plib_twihs_master_common.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
@@ -93,4 +93,4 @@ bool TWIHS0_TransferSetup( TWIHS_TRANSFER_SETUP* setup, uint32_t srcClkFreq );
 #endif
 // DOM-IGNORE-END
 
-#endif //PLIB_TWIHS0_H
+#endif //PLIB_TWIHS0_MASTER_H
