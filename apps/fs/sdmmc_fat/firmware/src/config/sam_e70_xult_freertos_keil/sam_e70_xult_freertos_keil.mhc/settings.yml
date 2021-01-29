@@ -1,0 +1,14 @@
+configName: sam_e70_xult_freertos_keil
+folderName: ''
+format_version: v1.0
+frameworkPath: D:\Projects\h3
+processor: ATSAME70Q21B
+projectName: sdmmc_fat_sam_e70_xult_freertos_keil
+settings:
+  PackageFilter: aws_cloud;bootloader_apps_uart;bsp;core;core_apps_pic32mk;core_apps_pic32mx;core_apps_pic32mz_da;core_apps_pic32mz_ef;core_apps_pic32mz_w1;core_apps_sam_c20_c21;core_apps_sam_d20;core_apps_sam_d21_da1;core_apps_sam_d5x_e5x;core_apps_sam_e70_s70_v70_v71;csp;csp_apps_sam_9x60;csp_apps_sam_a5d2;csp_apps_sam_e70_s70_v70_v71;csp_apps_sam_g55;csp_apps_sam_rh71;net;usb;
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  TRUSTZONE: 'false'
+  CMSISPath: .\dev_packs\arm\CMSIS\5.6.0
+  MERGE_STRATEGY: OVERWRITE
+  DFPPath: .\dev_packs\Microchip\SAME70_DFP\4.3.67\same70b\atdf\ATSAME70Q21B.atdf
