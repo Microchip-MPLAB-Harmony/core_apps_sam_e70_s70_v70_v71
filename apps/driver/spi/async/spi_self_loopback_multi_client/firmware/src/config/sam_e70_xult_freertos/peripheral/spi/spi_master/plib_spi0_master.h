@@ -5,10 +5,10 @@
     Microchip Technology Inc.
 
   File Name:
-    plib_spi0.h
+    plib_spi0_master.h
 
   Summary:
-    SPI0 PLIB Header File
+    SPI0 Master PLIB Header File
 
   Description:
     This file has prototype of all the interfaces provided for particular
@@ -39,11 +39,11 @@
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
 
-#ifndef PLIB_SPI0_H
-#define PLIB_SPI0_H
+#ifndef PLIB_SPI0_MASTER_H
+#define PLIB_SPI0_MASTER__H
 
 #include "device.h"
-#include "plib_spi_common.h"
+#include "plib_spi_master_common.h"
 
 /* Provide C++ Compatibility */
 #ifdef __cplusplus
@@ -64,6 +64,7 @@ bool SPI0_Read( void* pReceiveData, size_t rxSize );
 
 bool SPI0_TransferSetup( SPI_TRANSFER_SETUP *setup, uint32_t spiSourceClock );
 
+
 bool SPI0_IsBusy( void );
 
 void SPI0_CallbackRegister( const SPI_CALLBACK callback, uintptr_t context );
@@ -76,7 +77,7 @@ void SPI0_CallbackRegister( const SPI_CALLBACK callback, uintptr_t context );
 
 #endif
 
-#endif // PLIB_SPI0_H
+#endif // PLIB_SPI0_MASTER_H
 
 /*******************************************************************************
  End of File
