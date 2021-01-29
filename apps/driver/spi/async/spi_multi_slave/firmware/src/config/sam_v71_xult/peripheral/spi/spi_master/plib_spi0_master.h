@@ -1,17 +1,18 @@
 /*******************************************************************************
- Debug Console Source file
+  SPI PLIB
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    xc32_monitor.c
+    plib_spi0_master.h
 
   Summary:
-    debug console Source File
+    SPI0 Master PLIB Header File
 
   Description:
-    None
+    This file has prototype of all the interfaces provided for particular
+    SPI peripheral.
 
 *******************************************************************************/
 
@@ -38,21 +39,46 @@
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
 
+#ifndef PLIB_SPI0_MASTER_H
+#define PLIB_SPI0_MASTER__H
 
-#ifdef __arm__
-/* Declaration of these functions are missing in stdio.h for ARM parts*/
-int _mon_getc(int canblock);
-void _mon_putc(char c);
-#endif //__arm__
+#include "device.h"
+#include "plib_spi_master_common.h"
 
-int _mon_getc(int canblock)
-{
-   (void)canblock;
-   return 0;
-}
+/* Provide C++ Compatibility */
+#ifdef __cplusplus
 
-void _mon_putc(char c)
-{
-   (void)c;
-}
+    extern "C" {
 
+#endif
+
+/****************************** SPI0 Interface *********************************/
+
+void SPI0_Initialize( void );
+
+bool SPI0_WriteRead( void* pTransmitData, size_t txSize, void* pReceiveData, size_t rxSize );
+
+bool SPI0_Write( void* pTransmitData, size_t txSize );
+
+bool SPI0_Read( void* pReceiveData, size_t rxSize );
+
+bool SPI0_TransferSetup( SPI_TRANSFER_SETUP *setup, uint32_t spiSourceClock );
+
+
+bool SPI0_IsBusy( void );
+
+void SPI0_CallbackRegister( const SPI_CALLBACK callback, uintptr_t context );
+
+
+/* Provide C++ Compatibility */
+#ifdef __cplusplus
+
+    }
+
+#endif
+
+#endif // PLIB_SPI0_MASTER_H
+
+/*******************************************************************************
+ End of File
+*/
