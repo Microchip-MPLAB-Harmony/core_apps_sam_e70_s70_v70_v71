@@ -2687,42 +2687,6 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: 'false'}
-  - type: File
-    attributes: {id: SYSTICK_FILE_0}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: enabled}
-        children:
-        - {type: Value, value: 'false'}
-  - type: File
-    attributes: {id: SYSTICK_FILE_1}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: enabled}
-        children:
-        - {type: Value, value: 'false'}
-  - type: File
-    attributes: {id: SYSTICK_FILE_2}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: enabled}
-        children:
-        - {type: Value, value: 'false'}
-  - type: Menu
-    attributes: {id: SYSTICK_MENU_0}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'false'}
   - type: Boolean
     attributes: {id: SYSTICK_PUBLISH_CAPABILITIES}
     children:
@@ -2772,6 +2736,19 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: 0 KB}
+  - type: Boolean
+    attributes: {id: USE_SYSTICK_INTERRUPT}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: readOnly}
+        children:
+        - {type: Value, value: 'false'}
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: 'false'}
   - type: Boolean
     attributes: {id: WDT_INTERRUPT_ENABLE}
     children:
@@ -4480,14 +4457,12 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '0'}
-  - type: File
-    attributes: {id: systickSystemInitFile}
+  - type: Boolean
+    attributes: {id: systickEnable}
     children:
-    - type: Attributes
+    - type: Values
       children:
-      - type: Boolean
-        attributes: {id: enabled}
-        children:
-        - {type: Value, value: 'false'}
+      - type: Dynamic
+        attributes: {id: core, value: 'false'}
 - type: ElementPosition
   attributes: {x: '20', y: '20', id: core}
