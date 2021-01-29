@@ -40,6 +40,7 @@
 
 #include "device.h"
 #include "plib_xdmac.h"
+#include "interrupts.h"
 
 /* Macro for limiting XDMAC objects to highest channel enabled */
 #define XDMAC_ACTIVE_CHANNELS_MAX 1

@@ -41,6 +41,7 @@
 #include "device.h"
 #include "plib_hsmci.h"
 #include "peripheral/xdmac/plib_xdmac.h"
+#include "interrupts.h"
 
 #define HSMCI_DMA_CHANNEL      0
 
