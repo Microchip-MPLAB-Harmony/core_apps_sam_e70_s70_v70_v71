@@ -44,6 +44,7 @@ The following table shows the target hardware for the application projects.
 
 ## Running the Application
 
+1. Build and program the application using its IDE.
 2. The LED indicates the success or failure.
     - The LED toggles on success i.e. for every 500 ms.
 
