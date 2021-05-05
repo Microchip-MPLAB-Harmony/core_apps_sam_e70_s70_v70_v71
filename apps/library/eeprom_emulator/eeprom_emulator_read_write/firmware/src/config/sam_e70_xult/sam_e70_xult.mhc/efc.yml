@@ -1,0 +1,30 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: efc}
+children:
+- type: Symbols
+  children:
+  - type: Integer
+    attributes: {id: NVM_RWS}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: efc, value: '6'}
+- type: Attachments
+  children:
+  - type: DirectCapability
+    attributes: {id: EFC_MEMORY}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: targetComponentID}
+        children:
+        - {type: Value, value: lib_emulated_eeprom}
+      - type: String
+        attributes: {id: targetAttachmentID}
+        children:
+        - {type: Value, value: lib_emulated_eeprom_MEMORY_dependency}
+- type: ElementPosition
+  attributes: {x: '98', y: '135', id: efc}

@@ -1,0 +1,150 @@
+format_version: v1.0
+type: UniqueComponent
+attributes: {id: lib_emulated_eeprom}
+children:
+- type: Symbols
+  children:
+  - type: Integer
+    attributes: {id: EEPROM_EMULATOR_EEPROM_LOGICAL_SIZE}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: lib_emulated_eeprom, value: '4064'}
+  - type: Integer
+    attributes: {id: EEPROM_EMULATOR_EEPROM_SIZE}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: lib_emulated_eeprom, value: '16384'}
+  - type: Integer
+    attributes: {id: EEPROM_EMULATOR_EEPROM_SIZE_IN_BLOCKS}
+    children:
+    - type: Attributes
+      children:
+      - type: Integer
+        attributes: {id: max}
+        children:
+        - {type: Value, value: '256'}
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
+  - type: Hex
+    attributes: {id: EEPROM_EMULATOR_EEPROM_START_ADDRESS}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: lib_emulated_eeprom, value: '6275072'}
+  - type: Integer
+    attributes: {id: EEPROM_EMULATOR_FLASH_SIZE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: lib_emulated_eeprom, value: '2097152'}
+  - type: Integer
+    attributes: {id: EEPROM_EMULATOR_FLASH_START_ADDR}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: lib_emulated_eeprom, value: '4194304'}
+  - type: Boolean
+    attributes: {id: EEPROM_EMULATOR_IS_DEPENDENCY_SATISFIED}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: lib_emulated_eeprom, value: 'true'}
+  - type: Integer
+    attributes: {id: EEPROM_EMULATOR_NUM_LOGICAL_PAGES}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: lib_emulated_eeprom, value: '8'}
+  - type: Integer
+    attributes: {id: EEPROM_EMULATOR_NUM_PHYSICAL_PAGES}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: lib_emulated_eeprom, value: '32'}
+  - type: String
+    attributes: {id: EEPROM_EMULATOR_NVM_PLIB}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: lib_emulated_eeprom, value: EFC}
+  - type: Integer
+    attributes: {id: EEPROM_EMULATOR_PAGES_PER_ROW}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: lib_emulated_eeprom, value: '16'}
+  - type: Integer
+    attributes: {id: EEPROM_EMULATOR_PAGE_SIZE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: lib_emulated_eeprom, value: '512'}
+  - type: Integer
+    attributes: {id: EEPROM_EMULATOR_ROW_SIZE}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: lib_emulated_eeprom, value: '8192'}
+- type: Attachments
+  children:
+  - type: DirectDependency
+    attributes: {id: lib_emulated_eeprom_MEMORY_dependency}
+    children:
+    - type: Attributes
+      children:
+      - type: String
+        attributes: {id: targetComponentID}
+        children:
+        - {type: Value, value: efc}
+      - type: String
+        attributes: {id: targetAttachmentID}
+        children:
+        - {type: Value, value: EFC_MEMORY}
+- type: ElementPosition
+  attributes: {x: '271', y: '113', id: lib_emulated_eeprom}
