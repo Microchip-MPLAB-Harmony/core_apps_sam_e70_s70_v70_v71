@@ -62,6 +62,7 @@ The following applications are provided to demonstrate the typical or interestin
 | [FAT file system using NVM and SDMMC media](apps/fs/nvm_sdmmc_fat_multi_disk/readme.md) | This application shows an example of using the FAT File System to access files across multiple media (NVM, SDMMC) |
 | [FAT file system using NVM and SDSPI media](apps/fs/nvm_sdspi_fat_multi_disk/readme.md) | This application shows an example of using the FAT File System to access files across multiple media (NVM, SDSPI) |
 | [FAT filesystem using NVM and SST26 Media](apps/fs/nvm_sqi_fat/readme.md) | This application shows an example of using the FAT File System to access multiple files across multiple media (NVM, SQI FLASH) |
+| [FAT filesystem using RAM Media](apps/fs/ram_fat/readme.md) | This application shows an example of using the FAT File System to access RAM media |
 | [FAT filesystem using SDMMC Media](apps/fs/sdmmc_fat/readme.md) | This application shows an example of using the FAT File System to access and modify the contents of a SD card using the SDMMC driver |
 | [FAT filesystem throughput using SDMMC Media](apps/fs/sdmmc_fat_throughput/readme.md) | This application calculates throughput by Writing and Reading data into a Sd-Card at High Speed using the MPLAB Harmony File System and the SDMMC driver |
 | [FAT filesystem using SDSPI media](apps/fs/sdspi_fat/readme.md) | This application shows an example of using the FAT File System to access and modify the contents of a SD card using the SDSPI driver and the SPI PLIB |
