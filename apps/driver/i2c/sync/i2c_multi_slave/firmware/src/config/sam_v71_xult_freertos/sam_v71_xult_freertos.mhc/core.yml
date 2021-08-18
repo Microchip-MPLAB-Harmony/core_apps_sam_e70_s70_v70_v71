@@ -2864,6 +2864,15 @@ children:
       children:
       - type: User
         attributes: {value: '150000000'}
+  - type: Comment
+    attributes: {id: SYSTICK_COMMENT}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
   - type: String
     attributes: {id: SYSTICK_PERIOD}
     children:
@@ -3028,12 +3037,6 @@ children:
   - type: Boolean
     attributes: {id: USE_SYSTICK_INTERRUPT}
     children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: readOnly}
-        children:
-        - {type: Value, value: 'false'}
     - type: Values
       children:
       - type: Dynamic
@@ -4753,5 +4756,14 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '150000000'}
+  - type: Boolean
+    attributes: {id: systickEnable}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'false'}
 - type: ElementPosition
   attributes: {x: '20', y: '20', id: core}
