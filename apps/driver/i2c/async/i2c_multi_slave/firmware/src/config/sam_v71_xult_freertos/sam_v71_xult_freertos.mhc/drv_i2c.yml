@@ -70,6 +70,15 @@ children:
           children:
           - type: Dynamic
             attributes: {id: drv_i2c_0, value: TWIHS0}
+      - type: Integer
+        attributes: {id: DRV_I2C_QUEUE_SIZE}
+        children:
+        - type: Attributes
+          children:
+          - type: Boolean
+            attributes: {id: visible}
+            children:
+            - {type: Value, value: 'true'}
     - type: Attachments
       children:
       - type: DirectDependency
