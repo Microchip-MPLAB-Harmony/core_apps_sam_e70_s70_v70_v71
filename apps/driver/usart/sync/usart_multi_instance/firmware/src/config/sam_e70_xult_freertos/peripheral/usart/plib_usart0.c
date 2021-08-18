@@ -73,17 +73,20 @@ USART_OBJECT usart0Obj;
 
 static void USART0_ISR_RX_Handler( void )
 {
+    uint16_t rxData = 0;
+
     if(usart0Obj.rxBusyStatus == true)
     {
         while((USART0_REGS->US_CSR & US_CSR_USART_RXRDY_Msk) && (usart0Obj.rxSize > usart0Obj.rxProcessedSize))
         {
+            rxData = USART0_REGS->US_RHR & US_RHR_RXCHR_Msk;
             if (USART0_REGS->US_MR & US_MR_USART_MODE9_Msk)
             {
-                ((uint16_t*)usart0Obj.rxBuffer)[usart0Obj.rxProcessedSize++] = USART0_REGS->US_RHR & US_RHR_RXCHR_Msk;
+                ((uint16_t*)usart0Obj.rxBuffer)[usart0Obj.rxProcessedSize++] = (uint16_t)rxData;
             }
             else
             {
-                usart0Obj.rxBuffer[usart0Obj.rxProcessedSize++] = USART0_REGS->US_RHR & US_RHR_RXCHR_Msk;
+                usart0Obj.rxBuffer[usart0Obj.rxProcessedSize++] = (uint8_t)rxData;
             }
         }
 
