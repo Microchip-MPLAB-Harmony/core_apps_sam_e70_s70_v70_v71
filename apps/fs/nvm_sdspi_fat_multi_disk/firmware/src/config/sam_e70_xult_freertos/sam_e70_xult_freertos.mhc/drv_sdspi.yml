@@ -18,6 +18,15 @@ children:
       children:
       - type: Dynamic
         attributes: {id: drv_sdspi, value: Synchronous}
+  - type: File
+    attributes: {id: DRV_SDSPI_FS_SOURCE}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: enabled}
+        children:
+        - {type: Value, value: 'true'}
 - type: Instances
   children:
   - type: InstanceComponent

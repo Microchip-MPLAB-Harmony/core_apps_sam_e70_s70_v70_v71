@@ -70,14 +70,14 @@ children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: drv_sdspi_0, value: 'false'}
+        attributes: {id: core, value: 'false'}
   - type: Boolean
     attributes: {id: DMA_CH_NEEDED_FOR_SPI0_Transmit}
     children:
     - type: Values
       children:
       - type: Dynamic
-        attributes: {id: drv_sdspi_0, value: 'false'}
+        attributes: {id: core, value: 'false'}
   - type: Boolean
     attributes: {id: EFC_INTERRUPT_ENABLE}
     children:

@@ -49,7 +49,6 @@
 // *****************************************************************************
 
 #include "configuration.h"
-#include "system/dma/sys_dma.h"
 #include "driver/sdspi/drv_sdspi.h"
 #include "osal/osal.h"
 
@@ -614,7 +613,7 @@ typedef struct
     /* Pointer to the buffer used during sending commands and receiving responses
      * on the SPI bus. Buffer must be cache line aligned when using DMA with cache or
      * the buffer must be in coherent memory region */
-    volatile CACHE_ALIGN  uint8_t       cmdRespBuffer[32];
+    volatile CACHE_ALIGN  uint8_t       cmdRespBuffer[CACHE_ALIGNED_SIZE_GET(32)];
 
     /* Flag to indicate this object is in use  */
     bool                                inUse;
@@ -728,23 +727,6 @@ typedef struct
     /* SDSPI driver media geometry table. */
     SYS_MEDIA_REGION_GEOMETRY           mediaGeometryTable[3];
 
-    /* Transmit DMA Channel */
-    SYS_DMA_CHANNEL                     txDMAChannel;
-
-    /* Receive DMA Channel */
-    SYS_DMA_CHANNEL                     rxDMAChannel;
-
-    /* This is the SPI transmit register address. Used for DMA operation. */
-    void*                               txAddress;
-
-    /* This is the SPI receive register address. Used for DMA operation. */
-    void*                               rxAddress;
-
-    /* Pointer to the common transmit dummy data array */
-    uint8_t*                            txDummyData;
-
-    /* Dummy data is read into this variable by RX DMA */
-    uint32_t                            rxDummyData;
 
     bool                                isFsEnabled;
 
