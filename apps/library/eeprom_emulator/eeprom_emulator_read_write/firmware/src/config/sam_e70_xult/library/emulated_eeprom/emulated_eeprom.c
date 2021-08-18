@@ -501,6 +501,9 @@ static EMU_EEPROM_STATUS EMU_EEPROM_MoveDataToSpare( const uint16_t row_number, 
         _eeprom_instance.cache_active = true;
     }
 
+    /* Commit any cached data to physical non-volatile memory */
+    EMU_EEPROM_CachedDataCommit();
+
     /* Erase the row that was moved and set it as the new spare row */
     EMU_EEPROM_NVMRowErase(row_number);
 
