@@ -13,7 +13,7 @@ This example application shows how to use the AT24 driver to perform read and wr
 
 ## Description
 
-- This example uses the AT24 driver to communicate with I2C based On-Board AT24MAC402 series EEPROMs to perform write and read operations in Bare-Metal environment.
+- This example uses the AT24 driver to read and write from I2C based On-Board AT24MAC402 series EEPROMs.
 
 ## Downloading and building the application
 
