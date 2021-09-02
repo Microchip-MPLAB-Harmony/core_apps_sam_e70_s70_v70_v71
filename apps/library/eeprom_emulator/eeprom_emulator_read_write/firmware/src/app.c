@@ -37,11 +37,12 @@
 // Section: Global Data Definitions
 // *****************************************************************************
 // *****************************************************************************
+#define OFFSETOF(s, m) ((size_t)&(((s *)0)->m))
 #define SIZEOF(s, m) ((size_t) sizeof(((s *)0)->m))
 
-#define EMU_EEPROM_READ(MEM, DEST) EMU_EEPROM_BufferRead(offsetof(EEPROM_DATA, MEM), (uint8_t*)DEST, SIZEOF(EEPROM_DATA, MEM))
+#define EMU_EEPROM_READ(MEM, DEST) EMU_EEPROM_BufferRead(OFFSETOF(EEPROM_DATA, MEM), (uint8_t*)DEST, SIZEOF(EEPROM_DATA, MEM))
 
-#define EMU_EEPROM_WRITE(MEM, DATA) EMU_EEPROM_BufferWrite(offsetof(EEPROM_DATA, MEM), (const uint8_t*)DATA, SIZEOF(EEPROM_DATA, MEM))
+#define EMU_EEPROM_WRITE(MEM, DATA) EMU_EEPROM_BufferWrite(OFFSETOF(EEPROM_DATA, MEM), (const uint8_t*)DATA, SIZEOF(EEPROM_DATA, MEM))
 // *****************************************************************************
 /* Application Data
 
