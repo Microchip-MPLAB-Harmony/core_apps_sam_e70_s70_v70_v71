@@ -58,6 +58,7 @@ The following table shows the target hardware for the application projects.
 - To run the demo, the following additional hardware are required:
   - [I/O1 Xplained Pro Extension Kit](https://www.microchip.com/developmenttools/ProductDetails/ATIO1-XPRO)
   - Micro-SD card formatted to FAT filesystem
+  - Copy a JPG file named **FILE_TOO_LONG_NAME_EXAMPLE_123.JPG** on the SD card
 - Connect the [I/O1 Xplained Pro Extension Kit](https://www.microchip.com/developmenttools/ProductDetails/ATIO1-XPRO) to the EXT1 header
 - Insert microSD card on the [I/O1 Xplained Pro Extension Kit](https://www.microchip.com/developmenttools/ProductDetails/ATIO1-XPRO)
 - Connect the Debug USB port on the board to the computer using a micro USB cable
