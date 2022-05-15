@@ -128,6 +128,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: 'false'}
   - type: String
+    attributes: {id: PIN_100_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '100:PC16'}
+  - type: String
     attributes: {id: PIN_100_PERIPHERAL_FUNCTION}
     children:
     - type: Values
@@ -149,6 +156,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '16'}
   - type: String
+    attributes: {id: PIN_101_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '101:PD10'}
+  - type: String
     attributes: {id: PIN_101_PIO_CHANNEL}
     children:
     - type: Values
@@ -162,6 +176,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '10'}
+  - type: String
+    attributes: {id: PIN_102_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '102:PA0'}
   - type: String
     attributes: {id: PIN_102_PIO_CHANNEL}
     children:
@@ -177,6 +198,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '0'}
   - type: String
+    attributes: {id: PIN_103_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '103:PC17'}
+  - type: String
     attributes: {id: PIN_103_PIO_CHANNEL}
     children:
     - type: Values
@@ -190,6 +218,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '17'}
+  - type: String
+    attributes: {id: PIN_104_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '104:JTAGSEL'}
   - type: String
     attributes: {id: PIN_104_PIO_CHANNEL}
     children:
@@ -205,6 +240,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
   - type: String
+    attributes: {id: PIN_105_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '105:PB4'}
+  - type: String
     attributes: {id: PIN_105_PIO_CHANNEL}
     children:
     - type: Values
@@ -218,6 +260,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '4'}
+  - type: String
+    attributes: {id: PIN_106_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '106:PD15'}
   - type: String
     attributes: {id: PIN_106_PIO_CHANNEL}
     children:
@@ -233,6 +282,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '15'}
   - type: String
+    attributes: {id: PIN_107_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '107:VDDCORE'}
+  - type: String
     attributes: {id: PIN_107_PIO_CHANNEL}
     children:
     - type: Values
@@ -246,6 +302,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
+  - type: String
+    attributes: {id: PIN_108_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '108:PD29'}
   - type: String
     attributes: {id: PIN_108_PIO_CHANNEL}
     children:
@@ -261,6 +324,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '29'}
   - type: String
+    attributes: {id: PIN_109_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '109:PB5'}
+  - type: String
     attributes: {id: PIN_109_PIO_CHANNEL}
     children:
     - type: Values
@@ -274,6 +344,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '5'}
+  - type: String
+    attributes: {id: PIN_10_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '10:PE3'}
   - type: String
     attributes: {id: PIN_10_PIO_CHANNEL}
     children:
@@ -289,6 +366,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '3'}
   - type: String
+    attributes: {id: PIN_110_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '110:PD9'}
+  - type: String
     attributes: {id: PIN_110_PIO_CHANNEL}
     children:
     - type: Values
@@ -302,6 +386,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '9'}
+  - type: String
+    attributes: {id: PIN_111_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '111:PC18'}
   - type: String
     attributes: {id: PIN_111_PIO_CHANNEL}
     children:
@@ -317,6 +408,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '18'}
   - type: String
+    attributes: {id: PIN_112_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '112:PA28'}
+  - type: String
     attributes: {id: PIN_112_PIO_CHANNEL}
     children:
     - type: Values
@@ -330,6 +428,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '28'}
+  - type: String
+    attributes: {id: PIN_113_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '113:PD8'}
   - type: String
     attributes: {id: PIN_113_PIO_CHANNEL}
     children:
@@ -345,6 +450,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '8'}
   - type: String
+    attributes: {id: PIN_114_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '114:PA6'}
+  - type: String
     attributes: {id: PIN_114_PIO_CHANNEL}
     children:
     - type: Values
@@ -358,6 +470,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '6'}
+  - type: String
+    attributes: {id: PIN_115_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '115:GND'}
   - type: String
     attributes: {id: PIN_115_PIO_CHANNEL}
     children:
@@ -373,6 +492,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
   - type: String
+    attributes: {id: PIN_116_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '116:PA30'}
+  - type: String
     attributes: {id: PIN_116_PIO_CHANNEL}
     children:
     - type: Values
@@ -386,6 +512,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '30'}
+  - type: String
+    attributes: {id: PIN_117_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '117:PC19'}
   - type: String
     attributes: {id: PIN_117_PIO_CHANNEL}
     children:
@@ -401,6 +534,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '19'}
   - type: String
+    attributes: {id: PIN_118_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '118:PA31'}
+  - type: String
     attributes: {id: PIN_118_PIO_CHANNEL}
     children:
     - type: Values
@@ -414,6 +554,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '31'}
+  - type: String
+    attributes: {id: PIN_119_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '119:PD7'}
   - type: String
     attributes: {id: PIN_119_PIO_CHANNEL}
     children:
@@ -429,6 +576,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '7'}
   - type: String
+    attributes: {id: PIN_11_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '11:PC0'}
+  - type: String
     attributes: {id: PIN_11_PIO_CHANNEL}
     children:
     - type: Values
@@ -442,6 +596,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '0'}
+  - type: String
+    attributes: {id: PIN_120_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '120:PC20'}
   - type: String
     attributes: {id: PIN_120_PIO_CHANNEL}
     children:
@@ -457,6 +618,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '20'}
   - type: String
+    attributes: {id: PIN_121_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '121:PD6'}
+  - type: String
     attributes: {id: PIN_121_PIO_CHANNEL}
     children:
     - type: Values
@@ -470,6 +638,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '6'}
+  - type: String
+    attributes: {id: PIN_122_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '122:PC21'}
   - type: String
     attributes: {id: PIN_122_PIO_CHANNEL}
     children:
@@ -485,6 +660,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '21'}
   - type: String
+    attributes: {id: PIN_123_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '123:VDDPLL'}
+  - type: String
     attributes: {id: PIN_123_PIO_CHANNEL}
     children:
     - type: Values
@@ -498,6 +680,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
+  - type: String
+    attributes: {id: PIN_124_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '124:PC22'}
   - type: String
     attributes: {id: PIN_124_PIO_CHANNEL}
     children:
@@ -513,6 +702,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '22'}
   - type: String
+    attributes: {id: PIN_125_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '125:PD5'}
+  - type: String
     attributes: {id: PIN_125_PIO_CHANNEL}
     children:
     - type: Values
@@ -526,6 +722,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '5'}
+  - type: String
+    attributes: {id: PIN_126_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '126:PD4'}
   - type: String
     attributes: {id: PIN_126_PIO_CHANNEL}
     children:
@@ -541,6 +744,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '4'}
   - type: String
+    attributes: {id: PIN_127_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '127:PC23'}
+  - type: String
     attributes: {id: PIN_127_PIO_CHANNEL}
     children:
     - type: Values
@@ -554,6 +764,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '23'}
+  - type: String
+    attributes: {id: PIN_128_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '128:PD3'}
   - type: String
     attributes: {id: PIN_128_PIO_CHANNEL}
     children:
@@ -569,6 +786,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '3'}
   - type: String
+    attributes: {id: PIN_129_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '129:PA29'}
+  - type: String
     attributes: {id: PIN_129_PIO_CHANNEL}
     children:
     - type: Values
@@ -582,6 +806,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '29'}
+  - type: String
+    attributes: {id: PIN_12_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '12:PC27'}
   - type: String
     attributes: {id: PIN_12_PIO_CHANNEL}
     children:
@@ -597,6 +828,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '27'}
   - type: String
+    attributes: {id: PIN_130_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '130:PC24'}
+  - type: String
     attributes: {id: PIN_130_PIO_CHANNEL}
     children:
     - type: Values
@@ -610,6 +848,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '24'}
+  - type: String
+    attributes: {id: PIN_131_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '131:PD2'}
   - type: String
     attributes: {id: PIN_131_PIO_CHANNEL}
     children:
@@ -625,6 +870,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '2'}
   - type: String
+    attributes: {id: PIN_132_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '132:PD1'}
+  - type: String
     attributes: {id: PIN_132_PIO_CHANNEL}
     children:
     - type: Values
@@ -638,6 +890,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '1'}
+  - type: String
+    attributes: {id: PIN_133_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '133:PC25'}
   - type: String
     attributes: {id: PIN_133_PIO_CHANNEL}
     children:
@@ -653,6 +912,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '25'}
   - type: String
+    attributes: {id: PIN_134_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '134:VDDUTMII'}
+  - type: String
     attributes: {id: PIN_134_PIO_CHANNEL}
     children:
     - type: Values
@@ -666,6 +932,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
+  - type: String
+    attributes: {id: PIN_135_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '135:GND'}
   - type: String
     attributes: {id: PIN_135_PIO_CHANNEL}
     children:
@@ -681,6 +954,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
   - type: String
+    attributes: {id: PIN_136_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '136:HSDM'}
+  - type: String
     attributes: {id: PIN_136_PIO_CHANNEL}
     children:
     - type: Values
@@ -694,6 +974,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
+  - type: String
+    attributes: {id: PIN_137_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '137:HSDP'}
   - type: String
     attributes: {id: PIN_137_PIO_CHANNEL}
     children:
@@ -709,6 +996,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
   - type: String
+    attributes: {id: PIN_138_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '138:GND'}
+  - type: String
     attributes: {id: PIN_138_PIO_CHANNEL}
     children:
     - type: Values
@@ -722,6 +1016,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
+  - type: String
+    attributes: {id: PIN_139_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '139:VDDUTMIC'}
   - type: String
     attributes: {id: PIN_139_PIO_CHANNEL}
     children:
@@ -737,6 +1038,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
   - type: String
+    attributes: {id: PIN_13_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '13:PC26'}
+  - type: String
     attributes: {id: PIN_13_PIO_CHANNEL}
     children:
     - type: Values
@@ -750,6 +1058,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '26'}
+  - type: String
+    attributes: {id: PIN_140_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '140:VBG'}
   - type: String
     attributes: {id: PIN_140_PIO_CHANNEL}
     children:
@@ -765,6 +1080,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
   - type: String
+    attributes: {id: PIN_141_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '141:PB8'}
+  - type: String
     attributes: {id: PIN_141_PIO_CHANNEL}
     children:
     - type: Values
@@ -778,6 +1100,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '8'}
+  - type: String
+    attributes: {id: PIN_142_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '142:PB9'}
   - type: String
     attributes: {id: PIN_142_PIO_CHANNEL}
     children:
@@ -793,6 +1122,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '9'}
   - type: String
+    attributes: {id: PIN_143_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '143:VDDPLLUSB'}
+  - type: String
     attributes: {id: PIN_143_PIO_CHANNEL}
     children:
     - type: Values
@@ -806,6 +1142,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
+  - type: String
+    attributes: {id: PIN_144_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '144:PB13'}
   - type: String
     attributes: {id: PIN_144_PIO_CHANNEL}
     children:
@@ -821,6 +1164,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '13'}
   - type: String
+    attributes: {id: PIN_14_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '14:PC31'}
+  - type: String
     attributes: {id: PIN_14_PIO_CHANNEL}
     children:
     - type: Values
@@ -834,6 +1184,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '31'}
+  - type: String
+    attributes: {id: PIN_15_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '15:PC30'}
   - type: String
     attributes: {id: PIN_15_PIO_CHANNEL}
     children:
@@ -849,6 +1206,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '30'}
   - type: String
+    attributes: {id: PIN_16_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '16:PC29'}
+  - type: String
     attributes: {id: PIN_16_PIO_CHANNEL}
     children:
     - type: Values
@@ -862,6 +1226,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '29'}
+  - type: String
+    attributes: {id: PIN_17_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '17:PC12'}
   - type: String
     attributes: {id: PIN_17_PIO_CHANNEL}
     children:
@@ -877,6 +1248,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '12'}
   - type: String
+    attributes: {id: PIN_18_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '18:PC15'}
+  - type: String
     attributes: {id: PIN_18_PIO_CHANNEL}
     children:
     - type: Values
@@ -890,6 +1268,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '15'}
+  - type: String
+    attributes: {id: PIN_19_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '19:PC13'}
   - type: String
     attributes: {id: PIN_19_PIO_CHANNEL}
     children:
@@ -905,6 +1290,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '13'}
   - type: String
+    attributes: {id: PIN_1_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '1:PD0'}
+  - type: String
     attributes: {id: PIN_1_PIO_CHANNEL}
     children:
     - type: Values
@@ -918,6 +1310,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '0'}
+  - type: String
+    attributes: {id: PIN_20_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '20:PB1'}
   - type: String
     attributes: {id: PIN_20_PIO_CHANNEL}
     children:
@@ -933,6 +1332,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '1'}
   - type: String
+    attributes: {id: PIN_21_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '21:PB0'}
+  - type: String
     attributes: {id: PIN_21_PIO_CHANNEL}
     children:
     - type: Values
@@ -946,6 +1352,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '0'}
+  - type: String
+    attributes: {id: PIN_22_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '22:PA20'}
   - type: String
     attributes: {id: PIN_22_PIO_CHANNEL}
     children:
@@ -961,6 +1374,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '20'}
   - type: String
+    attributes: {id: PIN_23_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '23:PA19'}
+  - type: String
     attributes: {id: PIN_23_PIO_CHANNEL}
     children:
     - type: Values
@@ -974,6 +1394,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '19'}
+  - type: String
+    attributes: {id: PIN_24_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '24:PA18'}
   - type: String
     attributes: {id: PIN_24_PIO_CHANNEL}
     children:
@@ -989,6 +1416,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '18'}
   - type: String
+    attributes: {id: PIN_25_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '25:PA17'}
+  - type: String
     attributes: {id: PIN_25_PIO_CHANNEL}
     children:
     - type: Values
@@ -1002,6 +1436,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '17'}
+  - type: String
+    attributes: {id: PIN_26_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '26:PB2'}
   - type: String
     attributes: {id: PIN_26_PIO_CHANNEL}
     children:
@@ -1017,6 +1458,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '2'}
   - type: String
+    attributes: {id: PIN_27_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '27:PE4'}
+  - type: String
     attributes: {id: PIN_27_PIO_CHANNEL}
     children:
     - type: Values
@@ -1030,6 +1478,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '4'}
+  - type: String
+    attributes: {id: PIN_28_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '28:PE5'}
   - type: String
     attributes: {id: PIN_28_PIO_CHANNEL}
     children:
@@ -1045,6 +1500,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '5'}
   - type: String
+    attributes: {id: PIN_29_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '29:VDDCORE'}
+  - type: String
     attributes: {id: PIN_29_PIO_CHANNEL}
     children:
     - type: Values
@@ -1058,6 +1520,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
+  - type: String
+    attributes: {id: PIN_2_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '2:PD31'}
   - type: String
     attributes: {id: PIN_2_PIO_CHANNEL}
     children:
@@ -1073,6 +1542,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '31'}
   - type: String
+    attributes: {id: PIN_30_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '30:VDDIO'}
+  - type: String
     attributes: {id: PIN_30_PIO_CHANNEL}
     children:
     - type: Values
@@ -1086,6 +1562,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
+  - type: String
+    attributes: {id: PIN_31_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '31:PB3'}
   - type: String
     attributes: {id: PIN_31_PIO_CHANNEL}
     children:
@@ -1101,6 +1584,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '3'}
   - type: String
+    attributes: {id: PIN_32_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '32:PA21'}
+  - type: String
     attributes: {id: PIN_32_PIO_CHANNEL}
     children:
     - type: Values
@@ -1114,6 +1604,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '21'}
+  - type: String
+    attributes: {id: PIN_33_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '33:VDDCORE'}
   - type: String
     attributes: {id: PIN_33_PIO_CHANNEL}
     children:
@@ -1129,6 +1626,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
   - type: String
+    attributes: {id: PIN_34_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '34:PD30'}
+  - type: String
     attributes: {id: PIN_34_PIO_CHANNEL}
     children:
     - type: Values
@@ -1142,6 +1646,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '30'}
+  - type: String
+    attributes: {id: PIN_35_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '35:PA7'}
   - type: String
     attributes: {id: PIN_35_PIO_CHANNEL}
     children:
@@ -1157,6 +1668,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '7'}
   - type: String
+    attributes: {id: PIN_36_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '36:PA8'}
+  - type: String
     attributes: {id: PIN_36_PIO_CHANNEL}
     children:
     - type: Values
@@ -1170,6 +1688,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '8'}
+  - type: String
+    attributes: {id: PIN_37_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '37:PA22'}
   - type: String
     attributes: {id: PIN_37_PIO_CHANNEL}
     children:
@@ -1185,6 +1710,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '22'}
   - type: String
+    attributes: {id: PIN_38_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '38:PC1'}
+  - type: String
     attributes: {id: PIN_38_PIO_CHANNEL}
     children:
     - type: Values
@@ -1198,6 +1730,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '1'}
+  - type: String
+    attributes: {id: PIN_39_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '39:PC2'}
   - type: String
     attributes: {id: PIN_39_PIO_CHANNEL}
     children:
@@ -1213,6 +1752,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '2'}
   - type: String
+    attributes: {id: PIN_3_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '3:VDDOUT'}
+  - type: String
     attributes: {id: PIN_3_PIO_CHANNEL}
     children:
     - type: Values
@@ -1226,6 +1772,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
+  - type: String
+    attributes: {id: PIN_40_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '40:PC3'}
   - type: String
     attributes: {id: PIN_40_PIO_CHANNEL}
     children:
@@ -1241,6 +1794,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '3'}
   - type: String
+    attributes: {id: PIN_41_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '41:PC4'}
+  - type: String
     attributes: {id: PIN_41_PIO_CHANNEL}
     children:
     - type: Values
@@ -1254,6 +1814,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '4'}
+  - type: String
+    attributes: {id: PIN_42_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '42:PA13'}
   - type: String
     attributes: {id: PIN_42_PIO_CHANNEL}
     children:
@@ -1269,6 +1836,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '13'}
   - type: String
+    attributes: {id: PIN_43_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '43:VDDIO'}
+  - type: String
     attributes: {id: PIN_43_PIO_CHANNEL}
     children:
     - type: Values
@@ -1282,6 +1856,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
+  - type: String
+    attributes: {id: PIN_44_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '44:GND'}
   - type: String
     attributes: {id: PIN_44_PIO_CHANNEL}
     children:
@@ -1297,6 +1878,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
   - type: String
+    attributes: {id: PIN_45_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '45:PA16'}
+  - type: String
     attributes: {id: PIN_45_PIO_CHANNEL}
     children:
     - type: Values
@@ -1310,6 +1898,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '16'}
+  - type: String
+    attributes: {id: PIN_46_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '46:PA23'}
   - type: String
     attributes: {id: PIN_46_PERIPHERAL_FUNCTION}
     children:
@@ -1332,6 +1927,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '23'}
   - type: String
+    attributes: {id: PIN_47_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '47:PD27'}
+  - type: String
     attributes: {id: PIN_47_PIO_CHANNEL}
     children:
     - type: Values
@@ -1345,6 +1947,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '27'}
+  - type: String
+    attributes: {id: PIN_48_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '48:PC7'}
   - type: String
     attributes: {id: PIN_48_PIO_CHANNEL}
     children:
@@ -1360,6 +1969,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '7'}
   - type: String
+    attributes: {id: PIN_49_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '49:PA15'}
+  - type: String
     attributes: {id: PIN_49_PIO_CHANNEL}
     children:
     - type: Values
@@ -1373,6 +1989,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '15'}
+  - type: String
+    attributes: {id: PIN_4_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '4:PE0'}
   - type: String
     attributes: {id: PIN_4_PIO_CHANNEL}
     children:
@@ -1388,6 +2011,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '0'}
   - type: String
+    attributes: {id: PIN_50_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '50:VDDCORE'}
+  - type: String
     attributes: {id: PIN_50_PIO_CHANNEL}
     children:
     - type: Values
@@ -1401,6 +2031,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
+  - type: String
+    attributes: {id: PIN_51_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '51:PA14'}
   - type: String
     attributes: {id: PIN_51_PIO_CHANNEL}
     children:
@@ -1416,6 +2053,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '14'}
   - type: String
+    attributes: {id: PIN_52_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '52:PD25'}
+  - type: String
     attributes: {id: PIN_52_PIO_CHANNEL}
     children:
     - type: Values
@@ -1429,6 +2073,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '25'}
+  - type: String
+    attributes: {id: PIN_53_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '53:PD26'}
   - type: String
     attributes: {id: PIN_53_PIO_CHANNEL}
     children:
@@ -1444,6 +2095,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '26'}
   - type: String
+    attributes: {id: PIN_54_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '54:PC6'}
+  - type: String
     attributes: {id: PIN_54_PIO_CHANNEL}
     children:
     - type: Values
@@ -1457,6 +2115,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '6'}
+  - type: String
+    attributes: {id: PIN_55_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '55:PD24'}
   - type: String
     attributes: {id: PIN_55_PIO_CHANNEL}
     children:
@@ -1472,6 +2137,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '24'}
   - type: String
+    attributes: {id: PIN_56_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '56:PA24'}
+  - type: String
     attributes: {id: PIN_56_PIO_CHANNEL}
     children:
     - type: Values
@@ -1485,6 +2157,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '24'}
+  - type: String
+    attributes: {id: PIN_57_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '57:PD23'}
   - type: String
     attributes: {id: PIN_57_PIO_CHANNEL}
     children:
@@ -1500,6 +2179,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '23'}
   - type: String
+    attributes: {id: PIN_58_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '58:PC5'}
+  - type: String
     attributes: {id: PIN_58_PIO_CHANNEL}
     children:
     - type: Values
@@ -1513,6 +2199,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '5'}
+  - type: String
+    attributes: {id: PIN_59_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '59:PA25'}
   - type: String
     attributes: {id: PIN_59_PIO_CHANNEL}
     children:
@@ -1528,6 +2221,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '25'}
   - type: String
+    attributes: {id: PIN_5_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '5:VDDIN'}
+  - type: String
     attributes: {id: PIN_5_PIO_CHANNEL}
     children:
     - type: Values
@@ -1541,6 +2241,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
+  - type: String
+    attributes: {id: PIN_60_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '60:PD22'}
   - type: String
     attributes: {id: PIN_60_PIO_CHANNEL}
     children:
@@ -1556,6 +2263,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '22'}
   - type: String
+    attributes: {id: PIN_61_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '61:GND'}
+  - type: String
     attributes: {id: PIN_61_PIO_CHANNEL}
     children:
     - type: Values
@@ -1569,6 +2283,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
+  - type: String
+    attributes: {id: PIN_62_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '62:PA26'}
   - type: String
     attributes: {id: PIN_62_PIO_CHANNEL}
     children:
@@ -1584,6 +2305,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '26'}
   - type: String
+    attributes: {id: PIN_63_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '63:PD21'}
+  - type: String
     attributes: {id: PIN_63_PIO_CHANNEL}
     children:
     - type: Values
@@ -1597,6 +2325,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '21'}
+  - type: String
+    attributes: {id: PIN_64_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '64:PA11'}
   - type: String
     attributes: {id: PIN_64_PIO_CHANNEL}
     children:
@@ -1612,6 +2347,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '11'}
   - type: String
+    attributes: {id: PIN_65_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '65:PD20'}
+  - type: String
     attributes: {id: PIN_65_PIO_CHANNEL}
     children:
     - type: Values
@@ -1625,6 +2367,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '20'}
+  - type: String
+    attributes: {id: PIN_66_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '66:PA10'}
   - type: String
     attributes: {id: PIN_66_PIO_CHANNEL}
     children:
@@ -1640,6 +2389,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '10'}
   - type: String
+    attributes: {id: PIN_67_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '67:PD19'}
+  - type: String
     attributes: {id: PIN_67_PIO_CHANNEL}
     children:
     - type: Values
@@ -1653,6 +2409,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '19'}
+  - type: String
+    attributes: {id: PIN_68_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '68:PA12'}
   - type: String
     attributes: {id: PIN_68_PIO_CHANNEL}
     children:
@@ -1668,6 +2431,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '12'}
   - type: String
+    attributes: {id: PIN_69_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '69:PD18'}
+  - type: String
     attributes: {id: PIN_69_PIO_CHANNEL}
     children:
     - type: Values
@@ -1681,6 +2451,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '18'}
+  - type: String
+    attributes: {id: PIN_6_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '6:PE1'}
   - type: String
     attributes: {id: PIN_6_PIO_CHANNEL}
     children:
@@ -1696,6 +2473,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '1'}
   - type: String
+    attributes: {id: PIN_70_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '70:PA27'}
+  - type: String
     attributes: {id: PIN_70_PIO_CHANNEL}
     children:
     - type: Values
@@ -1709,6 +2493,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '27'}
+  - type: String
+    attributes: {id: PIN_71_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '71:PD28'}
   - type: String
     attributes: {id: PIN_71_PIO_CHANNEL}
     children:
@@ -1724,6 +2515,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '28'}
   - type: String
+    attributes: {id: PIN_72_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '72:VDDIO'}
+  - type: String
     attributes: {id: PIN_72_PIO_CHANNEL}
     children:
     - type: Values
@@ -1737,6 +2535,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
+  - type: String
+    attributes: {id: PIN_73_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '73:PA5'}
   - type: String
     attributes: {id: PIN_73_PIO_CHANNEL}
     children:
@@ -1752,6 +2557,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '5'}
   - type: String
+    attributes: {id: PIN_74_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '74:PD17'}
+  - type: String
     attributes: {id: PIN_74_PIO_CHANNEL}
     children:
     - type: Values
@@ -1765,6 +2577,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '17'}
+  - type: String
+    attributes: {id: PIN_75_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '75:PA9'}
   - type: String
     attributes: {id: PIN_75_PERIPHERAL_FUNCTION}
     children:
@@ -1787,6 +2606,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '9'}
   - type: String
+    attributes: {id: PIN_76_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '76:PC28'}
+  - type: String
     attributes: {id: PIN_76_PIO_CHANNEL}
     children:
     - type: Values
@@ -1800,6 +2626,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '28'}
+  - type: String
+    attributes: {id: PIN_77_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '77:PA4'}
   - type: String
     attributes: {id: PIN_77_FUNCTION_TYPE}
     children:
@@ -1836,6 +2669,13 @@ children:
       - type: User
         attributes: {value: 'True'}
   - type: String
+    attributes: {id: PIN_78_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '78:PD16'}
+  - type: String
     attributes: {id: PIN_78_PIO_CHANNEL}
     children:
     - type: Values
@@ -1849,6 +2689,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '16'}
+  - type: String
+    attributes: {id: PIN_79_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '79:PB6'}
   - type: String
     attributes: {id: PIN_79_FUNCTION_TYPE}
     children:
@@ -1878,6 +2725,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '6'}
   - type: String
+    attributes: {id: PIN_7_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '7:PE2'}
+  - type: String
     attributes: {id: PIN_7_PIO_CHANNEL}
     children:
     - type: Values
@@ -1891,6 +2745,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '2'}
+  - type: String
+    attributes: {id: PIN_80_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '80:VDDIO'}
   - type: String
     attributes: {id: PIN_80_PIO_CHANNEL}
     children:
@@ -1906,6 +2767,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
   - type: String
+    attributes: {id: PIN_81_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '81:VDDCORE'}
+  - type: String
     attributes: {id: PIN_81_PIO_CHANNEL}
     children:
     - type: Values
@@ -1919,6 +2787,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
+  - type: String
+    attributes: {id: PIN_82_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '82:PC8'}
   - type: String
     attributes: {id: PIN_82_PIO_CHANNEL}
     children:
@@ -1934,6 +2809,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '8'}
   - type: String
+    attributes: {id: PIN_83_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '83:NRST'}
+  - type: String
     attributes: {id: PIN_83_PIO_CHANNEL}
     children:
     - type: Values
@@ -1947,6 +2829,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
+  - type: String
+    attributes: {id: PIN_84_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '84:PD14'}
   - type: String
     attributes: {id: PIN_84_PIO_CHANNEL}
     children:
@@ -1962,6 +2851,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '14'}
   - type: String
+    attributes: {id: PIN_85_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '85:TST'}
+  - type: String
     attributes: {id: PIN_85_PIO_CHANNEL}
     children:
     - type: Values
@@ -1975,6 +2871,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
+  - type: String
+    attributes: {id: PIN_86_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '86:PC9'}
   - type: String
     attributes: {id: PIN_86_PERIPHERAL_FUNCTION}
     children:
@@ -1997,6 +2900,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '9'}
   - type: String
+    attributes: {id: PIN_87_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '87:PB12'}
+  - type: String
     attributes: {id: PIN_87_PERIPHERAL_FUNCTION}
     children:
     - type: Values
@@ -2018,6 +2928,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '12'}
   - type: String
+    attributes: {id: PIN_88_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '88:PD13'}
+  - type: String
     attributes: {id: PIN_88_PIO_CHANNEL}
     children:
     - type: Values
@@ -2031,6 +2948,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '13'}
+  - type: String
+    attributes: {id: PIN_89_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '89:PB7'}
   - type: String
     attributes: {id: PIN_89_FUNCTION_TYPE}
     children:
@@ -2060,6 +2984,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '7'}
   - type: String
+    attributes: {id: PIN_8_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '8:VREFN'}
+  - type: String
     attributes: {id: PIN_8_PIO_CHANNEL}
     children:
     - type: Values
@@ -2074,6 +3005,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
   - type: String
+    attributes: {id: PIN_90_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '90:PC10'}
+  - type: String
     attributes: {id: PIN_90_PIO_CHANNEL}
     children:
     - type: Values
@@ -2087,6 +3025,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '10'}
+  - type: String
+    attributes: {id: PIN_91_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '91:PA3'}
   - type: String
     attributes: {id: PIN_91_FUNCTION_TYPE}
     children:
@@ -2123,6 +3068,13 @@ children:
       - type: User
         attributes: {value: 'True'}
   - type: String
+    attributes: {id: PIN_92_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '92:PD12'}
+  - type: String
     attributes: {id: PIN_92_PIO_CHANNEL}
     children:
     - type: Values
@@ -2136,6 +3088,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '12'}
+  - type: String
+    attributes: {id: PIN_93_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '93:PA2'}
   - type: String
     attributes: {id: PIN_93_PIO_CHANNEL}
     children:
@@ -2151,6 +3110,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '2'}
   - type: String
+    attributes: {id: PIN_94_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '94:PC11'}
+  - type: String
     attributes: {id: PIN_94_PIO_CHANNEL}
     children:
     - type: Values
@@ -2164,6 +3130,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '11'}
+  - type: String
+    attributes: {id: PIN_95_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '95:GND'}
   - type: String
     attributes: {id: PIN_95_PIO_CHANNEL}
     children:
@@ -2179,6 +3152,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
   - type: String
+    attributes: {id: PIN_96_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '96:VDDIO'}
+  - type: String
     attributes: {id: PIN_96_PIO_CHANNEL}
     children:
     - type: Values
@@ -2192,6 +3172,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '-1'}
+  - type: String
+    attributes: {id: PIN_97_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '97:PC14'}
   - type: String
     attributes: {id: PIN_97_PIO_CHANNEL}
     children:
@@ -2207,6 +3194,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '14'}
   - type: String
+    attributes: {id: PIN_98_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '98:PD11'}
+  - type: String
     attributes: {id: PIN_98_PIO_CHANNEL}
     children:
     - type: Values
@@ -2221,6 +3215,13 @@ children:
       - type: Dynamic
         attributes: {id: core, value: '11'}
   - type: String
+    attributes: {id: PIN_99_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '99:PA1'}
+  - type: String
     attributes: {id: PIN_99_PIO_CHANNEL}
     children:
     - type: Values
@@ -2234,6 +3235,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: core, value: '1'}
+  - type: String
+    attributes: {id: PIN_9_EXPORT_NAME}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: core, value: '9:VREFP'}
   - type: String
     attributes: {id: PIN_9_PIO_CHANNEL}
     children:
