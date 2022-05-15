@@ -52,6 +52,13 @@ children:
       children:
       - type: Dynamic
         attributes: {id: twihs0, value: MASTER}
+  - type: Integer
+    attributes: {id: TWIHS_TIMEOUT_COUNT_VAL}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: twihs0, value: '60000'}
 - type: Attachments
   children:
   - type: DirectCapability
