@@ -46,8 +46,7 @@ The following table shows the target hardware for the application projects.
   - [mikroBUS Xplained Pro board](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO)
   - [USB UART click board](https://www.mikroe.com/usb-uart-click)
 
-- Connect the [mikroBUS Xplained Pro board](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO) to the MikroBus header
-- Install an [USB UART click board](https://www.mikroe.com/usb-uart-click) on to the [mikroBUS Xplained Pro board](https://www.microchip.com/developmenttools/ProductDetails/ATMBUSADAPTER-XPRO)
+- Connect a [USB UART click board](https://www.mikroe.com/usb-uart-click) on to to the MikroBus header
 - Connect the Debug USB port on the board to the computer using a micro USB cable (This will enumerate as a COM port)
 - Connect mini USB cable to the [USB UART click board](https://www.mikroe.com/usb-uart-click) (This will enumerate the second port)
 
