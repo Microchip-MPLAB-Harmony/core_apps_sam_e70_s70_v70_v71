@@ -226,7 +226,7 @@ USART_ERROR USART0_ErrorGet( void )
 
 bool USART0_SerialSetup( USART_SERIAL_SETUP *setup, uint32_t srcClkFreq )
 {
-    uint32_t baud = setup->baudRate;
+    uint32_t baud;
     uint32_t brgVal = 0;
     uint32_t overSampVal = 0;
     uint32_t usartMode;
@@ -241,6 +241,7 @@ bool USART0_SerialSetup( USART_SERIAL_SETUP *setup, uint32_t srcClkFreq )
     if (setup != NULL)
     {
         baud = setup->baudRate;
+
         if(srcClkFreq == 0)
         {
             srcClkFreq = USART0_FrequencyGet();
@@ -348,6 +349,17 @@ bool USART0_Write( void *buffer, const size_t size )
     return status;
 }
 
+
+
+bool USART0_TransmitComplete( void )
+{
+    if(USART0_REGS->US_CSR & US_CSR_USART_TXEMPTY_Msk)
+    {
+        return true;
+    }
+
+    return false;
+}
 
 void USART0_WriteCallbackRegister( USART_CALLBACK callback, uintptr_t context )
 {
