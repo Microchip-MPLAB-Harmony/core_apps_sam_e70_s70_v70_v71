@@ -86,6 +86,8 @@ void USART0_WriteCallbackRegister( USART_CALLBACK callback, uintptr_t context );
 void USART0_ReadCallbackRegister( USART_CALLBACK callback, uintptr_t context );
 
 
+bool USART0_TransmitComplete( void );
+
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
 
