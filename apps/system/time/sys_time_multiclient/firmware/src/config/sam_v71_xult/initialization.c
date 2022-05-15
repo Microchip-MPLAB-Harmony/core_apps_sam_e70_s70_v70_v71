@@ -172,9 +172,9 @@ void SYS_Initialize ( void* data )
     TC0_CH0_TimerInitialize(); 
      
     
+	BSP_Initialize();
     USART1_Initialize();
 
-	BSP_Initialize();
 
 
     sysObj.sysTime = SYS_TIME_Initialize(SYS_TIME_INDEX_0, (SYS_MODULE_INIT *)&sysTimeInitData);
