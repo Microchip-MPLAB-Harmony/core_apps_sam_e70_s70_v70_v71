@@ -5,10 +5,10 @@ frameworkPath: ..\..\..\..\..\..\harmony_3
 processor: ATSAME70Q21B
 projectName: ram_fat_sam_e70_xult
 settings:
-  PackageFilter: bootloader;bsp;core;csp;net;usb
+  PackageFilter: bootloader;bsp;cec173x_soteria_lib;core;crypto;csp;Devices;dev_packs;harmony-services;net;quick_docs;usb
   FORCE_OPTIMIZATION: 'false'
   GENERATE_BACKUP: 'true'
   TRUSTZONE: 'false'
   CMSISPath: .\dev_packs\arm\CMSIS\5.8.0
   MERGE_STRATEGY: USER_ALL
-  DFPPath: .\dev_packs\Microchip\SAME70_DFP\4.5.86\same70b\atdf\ATSAME70Q21B.atdf
+  DFPPath: .\dev_packs\Microchip\SAME70_DFP\4.9.126\same70b\atdf\ATSAME70Q21B.atdf

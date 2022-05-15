@@ -46,15 +46,17 @@
 
 bool RAM_Read( uint32_t *data, uint32_t length, const uint32_t address )
 {
-    memcpy((void *)data, (void *)address, length);
-    
+     uint32_t *xaddress_r = (uint32_t *)address;
+    (void) memcpy(data, xaddress_r, length);
+
     return true;
 }
 
 bool RAM_Write( uint32_t *data, uint32_t length, uint32_t address )
 {
-    memcpy((void *)address, (void *)data, length);
-    
+     uint32_t *xaddress_w = (uint32_t *)address;
+    (void) memcpy(xaddress_w, data, length);
+
     return true;
 }
 

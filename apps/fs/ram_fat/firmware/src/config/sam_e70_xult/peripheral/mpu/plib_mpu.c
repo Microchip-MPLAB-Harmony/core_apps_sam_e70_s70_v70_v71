@@ -55,10 +55,6 @@ void MPU_Initialize(void)
 
     /*** Configure MPU Regions  ***/
 
-    /* Region 0 Name: SRAM, Base Address: 0x20400000, Size: 128KB  */
-    MPU->RBAR = MPU_REGION(0, 0x20400000);
-    MPU->RASR = MPU_REGION_SIZE(16) | MPU_RASR_AP(MPU_RASR_AP_READWRITE_Val) | MPU_ATTR_STRONGLY_ORDERED \
-                | MPU_ATTR_ENABLE  ;
 
 
 
