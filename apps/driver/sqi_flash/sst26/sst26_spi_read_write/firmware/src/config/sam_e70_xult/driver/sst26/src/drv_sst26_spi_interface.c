@@ -1,22 +1,23 @@
-/*******************************************************************************
-  MPU PLIB Implementation
+/******************************************************************************
+  SST26 Driver SPI Interface Implementation
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    plib_mpu.h
+    drv_sst26_spi_interface.c
 
   Summary:
-    MPU PLIB Source File
+    SST26 Driver Interface implementation
 
   Description:
-    None
-
+    This interface file segregates the SST26 protocol from the underlying
+    hardware layer implementation for SPI PLIB and SPI driver
 *******************************************************************************/
 
+// DOM-IGNORE-BEGIN
 /*******************************************************************************
-* Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
+* Copyright (C) 2019 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
 * and any derivatives exclusively with Microchip products. It is your
@@ -36,52 +37,52 @@
 * FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
-*******************************************************************************/
-
-#include "plib_mpu.h"
-#include "plib_mpu_local.h"
-
+ *******************************************************************************/
+// DOM-IGNORE-END
 
 // *****************************************************************************
 // *****************************************************************************
-// Section: MPU Implementation
+// Section: Include Files
 // *****************************************************************************
 // *****************************************************************************
 
-void MPU_Initialize(void)
+#include <string.h>
+#include "drv_sst26_spi_interface.h"
+
+extern void DRV_SST26_Handler(void);
+
+
+
+
+void _DRV_SST26_SPIPlibCallbackHandler(uintptr_t context )
 {
-    /*** Disable MPU            ***/
-    MPU->CTRL = 0;
+    DRV_SST26_OBJECT* dObj = (DRV_SST26_OBJECT*)context;
 
-    /*** Configure MPU Regions  ***/
+    dObj->transferDataObj.txSize = dObj->transferDataObj.rxSize = 0;
+    dObj->transferDataObj.pTransmitData = dObj->transferDataObj.pReceiveData = NULL;
 
-    /* Region 0 Name: QSPI, Base Address: 0x80000000, Size: 256MB  */
-    MPU->RBAR = MPU_REGION(0U, 0x80000000U);
-    MPU->RASR = MPU_REGION_SIZE(27U) | MPU_RASR_AP(MPU_RASR_AP_READWRITE_Val) | MPU_ATTR_STRONGLY_ORDERED \
-                | MPU_ATTR_ENABLE  ;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* Enable Memory Management Fault */
-    SCB->SHCSR |= (SCB_SHCSR_MEMFAULTENA_Msk);
-
-    /* Enable MPU */
-    MPU->CTRL = MPU_CTRL_ENABLE_Msk  | MPU_CTRL_PRIVDEFENA_Msk;
-
-    __DSB();
-    __ISB();
+    DRV_SST26_Handler();
 }
 
+
+void _DRV_SST26_InterfaceInit(DRV_SST26_OBJECT* dObj, DRV_SST26_INIT* sst26Init)
+{
+
+    /* Initialize the attached memory device functions */
+    dObj->sst26Plib = sst26Init->sst26Plib;
+    dObj->sst26Plib->callbackRegister(_DRV_SST26_SPIPlibCallbackHandler, (uintptr_t)dObj);
+}
+
+bool _DRV_SST26_SPIWriteRead(
+    DRV_SST26_OBJECT* dObj,
+    DRV_SST26_TRANSFER_OBJ* transferObj
+)
+{
+    bool isSuccess = true;
+
+    SYS_PORT_PinClear(dObj->chipSelectPin);
+
+    dObj->transferStatus    = DRV_SST26_TRANSFER_BUSY;
+    dObj->sst26Plib->writeRead (transferObj->pTransmitData, transferObj->txSize, transferObj->pReceiveData, transferObj->rxSize);
+    return isSuccess;
+}
