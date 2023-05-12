@@ -1,20 +1,21 @@
-/*******************************************************************************
- System Interrupts File
+/******************************************************************************
+  SDMMC Driver File System Interface Implementation
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    interrupt.h
+    drv_sdmmc_file_system.h
 
   Summary:
-    Interrupt vectors mapping
+    SDMMC Driver File System Interface Implementation
 
   Description:
-    This file contains declarations of device vectors used by Harmony 3
- *******************************************************************************/
+    This file registers the SDMMC Driver capabilities with the file system
+    interface.
+*******************************************************************************/
 
-// DOM-IGNORE-BEGIN
+//DOM-IGNORE-BEGIN
 /*******************************************************************************
 * Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
 *
@@ -36,41 +37,41 @@
 * FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
- *******************************************************************************/
+*******************************************************************************/
+//DOM-IGNORE-END
+#ifndef DRV_SDMMC_FILE_SYSTEM_H
+#define DRV_SDMMC_FILE_SYSTEM_H
+// *****************************************************************************
+// *****************************************************************************
+// Section: Include Files
+// *****************************************************************************
+// *****************************************************************************
+
+#include "driver/sdmmc/drv_sdmmc.h"
+#include "system/fs/sys_fs_media_manager.h"
+
+// DOM-IGNORE-BEGIN
+#ifdef __cplusplus  // Provide C++ Compatibility
+    extern "C" {
+#endif
 // DOM-IGNORE-END
-
-#ifndef INTERRUPTS_H
-#define INTERRUPTS_H
-
 // *****************************************************************************
 // *****************************************************************************
-// Section: Included Files
+// Section: Global objects
 // *****************************************************************************
 // *****************************************************************************
-#include <stdint.h>
-
 
 
 // *****************************************************************************
 // *****************************************************************************
-// Section: Handler Routines
+// Section: SDMMC Driver File system interface Routines
 // *****************************************************************************
 // *****************************************************************************
 
-void Reset_Handler (void);
-void NonMaskableInt_Handler (void);
-void HardFault_Handler (void);
-void MemoryManagement_Handler (void);
-void BusFault_Handler (void);
-void UsageFault_Handler (void);
-void vPortSVCHandler (void);
-void DebugMonitor_Handler (void);
-void xPortPendSVHandler (void);
-void xPortSysTickHandler (void);
-void HSMCI_InterruptHandler (void);
-void TC0_CH0_InterruptHandler (void);
-void XDMAC_InterruptHandler (void);
+void DRV_SDMMC_RegisterWithSysFs( const SYS_MODULE_INDEX drvIndex);
 
+#ifdef __cplusplus
+}
+#endif
 
-
-#endif // INTERRUPTS_H
+#endif //#ifndef DRV_SDMMC_FILE_SYSTEM_H
