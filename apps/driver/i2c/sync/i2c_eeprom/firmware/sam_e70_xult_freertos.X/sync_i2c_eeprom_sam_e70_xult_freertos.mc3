@@ -1,4 +1,4 @@
-<config configName="sam_e70_xult_freertos" projectName="sync_i2c_eeprom_sam_e70_xult_freertos" configVersion="1.1" device="ATSAME70Q21B" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.4.3">
+<config configName="sam_e70_xult_freertos" projectName="sync_i2c_eeprom_sam_e70_xult_freertos" configVersion="1.1" device="ATSAME70Q21B" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.5.0">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -43,7 +43,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.1.1"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.3.1"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -7721,15 +7721,15 @@
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\usart2.h</file>
-         <hash>a14638efaabbb64ca66da844feb88f736f0df774124a921731196ac78036a65b</hash>
+         <hash>689e569630957717faa97f3f5871b54ed4c5d9541c76168cd21717ea887990fc</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\fuses.h</file>
-         <hash>6066eade9112bd147ec19ae86e512047498db2b148696327e98d1193d6c5fee8</hash>
+         <hash>c12fabd4eb80b2566458b5ca8125c04e639583da9fd38018aa845a483a228783</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\freertos_hooks.c</file>
-         <hash>1c31f7febed38afbcb09d11b002c5dddda98c7ed7aba9ff8f8e32b8c5f288a47</hash>
+         <hash>3062db4f47d59d8ff5654c75b8f3d09cb07ce6c85fd6dfdc1b48536ac865a526</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\cachel1_armv7.h</file>
@@ -7741,51 +7741,51 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\task.h</file>
-         <hash>85a11a834d04120402087ac61190566f893480e9d6c8fe903218330dc4ea7d30</hash>
+         <hash>45f2245c914ed25ab26a1ea78ddd4ac74cb6522e1b26ac5c44b614ca4c8cee99</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\spi0.h</file>
-         <hash>4db1e68cc2214bdeb153d3e2834b47deb2fd55eb43bcda22ca147070c68063ba</hash>
+         <hash>a436829048f84682c4067dc2ba7fa6d84cfcf20618c2e629652bb817c1eb9508</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\afec0.h</file>
-         <hash>f40c8bc7e2c2bad4067175b290f1e65a6741287b321c132eba516624467cbdb4</hash>
+         <hash>8b122354f42ab98cfe5284c9fe8c4158666cd4e12d6469cd6f80c37bf27dab41</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\system\debug\sys_debug.h</file>
-         <hash>222cdc284bd651e83188b9641cc57c133cf86563dbeb5d5523766d4a36087165</hash>
+         <hash>bc6fa321b0be542d074e4564065b7fd69f52556486ac3d892d315b51c434f9ec</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\timers.c</file>
-         <hash>dae8ab1093eed0eebd86eef7f4e777e3d249d98b75528ff3841d41ce1c8f3fa6</hash>
+         <hash>24962ef361f396aaa5e6e33776eeeddaf2fb251c87b6fe50602acc56c537b093</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\qspi.h</file>
-         <hash>6df27b6745d47ad5d00777bd8ff7ca64c6a4056d2160b0d3ceba35536e4f93aa</hash>
+         <hash>2776cbc0b8b7322bc8fdd208b04cb5b47bbe1e5edac48f64978fdb7c10b2ba73</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\rtc.h</file>
-         <hash>245e06c60d43e645d650211e4dbd80f48a22f3022159a5b1e6cbd0c3196dd5ef</hash>
+         <hash>b264804ca3dea7f51fae6941b218ca2ca987db07ea654b702c8570794235f8e2</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\utmi.h</file>
-         <hash>2cf21ad886cb437b78ea01ffd1752f93390e188f1efd7b62dc196d0f1ff0d0ab</hash>
+         <hash>6855f1df9f18e437d6f9fd1faf5a757fbba701dfae33afa247c326dfcefbe9d0</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\stream_buffer.h</file>
-         <hash>43bd2a4bf5d6495e04c8409187d8f31dfaee58d8f94d7e3a4fd9830e5d7e68dc</hash>
+         <hash>b876d839460197d94d0f95fb93c6aeb457f6fc572d32258480fed7d4de686b6b</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\piob.h</file>
-         <hash>222951e7ae81de9ad6670e859e64f69b3abfae76129b48ea2a86b0242ce5483f</hash>
+         <hash>49e23a567218766cb8dbe6f97cb37890359ea8d9ac24a1a877054bc053f7d189</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\efc.h</file>
-         <hash>438af233a0a469b266e82c035927d75b245f08d02d21f04f10802affd9cafacb</hash>
+         <hash>ad96ab9befc5fd5ce5d7bdf55159f79f67d33870b8d687c9cb42a3e8629b083d</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\system\int\sys_int_mapping.h</file>
-         <hash>660e7081f93de17660144721849acf269925988a4f6510028d25903aaa866ea1</hash>
+         <hash>5abf8528dabc1b17378f5d137870597037214fddf33880fa40e9263352da3008</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\stdio\xc32_monitor.c</file>
@@ -7793,107 +7793,107 @@
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\gmac.h</file>
-         <hash>2524a7b49ba8e912518039653cb12d5a105da3136fe1d82cfb9253e48f6f92f8</hash>
+         <hash>e836e8f92856ef3a80585dcfdc13e0a9a856547484809e9f513f6f25ede5c96d</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\list.h</file>
-         <hash>f288a68b8559a1913dd663136711f7adcaf8b3430627d7102978be4d808a02eb</hash>
+         <hash>dc572f54391c0407fc25db360d912fca9118cddae7bd2e3099eb13f18804e5a9</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\pio\same70q21b.h</file>
-         <hash>b54d9c7e26cdc3b7a93c2989603aef2855225a05d4104839d44c2b8b7d5f7f45</hash>
+         <hash>3228b179bdea17afa86a7b2c33228051824331884d10e0582f68ff86145850ef</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\croutine.h</file>
-         <hash>b6da8ad0cb09303c87eb634679b97f56001c14f45acd1378103504699a95cad4</hash>
+         <hash>cf52c15fa26a8d4f82b55909b75ebfe2aab25468ba7780748912ddead9812b4e</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\driver\i2c\src\drv_i2c_local.h</file>
-         <hash>dd5db98f7652a9d213b9f9903061ac9a8b416a807c9f4b945d0efbf0b4c94f7d</hash>
+         <hash>a5b8e0e4f5644b88470600c3e52e76f9492bfc52e65210d6f94d6b87374e9bce</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\pio.h</file>
-         <hash>f833db7ecce65e40d0f964d4dcbfc3cd6569abc575fcec1d81f8de99cf10133f</hash>
+         <hash>e2a34f908eeb97024ca708bf426bef73f2ff4e23ad462dc843b9a31dbbb2adf9</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\croutine.c</file>
-         <hash>4566d5abfceea128a553ecf2bbb22b9d7c9c8a1d3c1f02f9091182b5290d02fc</hash>
+         <hash>ebf0cdce261dc4a256c06c0d4ad2582e6026a6da0e973d4cb92092e94ce8f370</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\twihs1.h</file>
-         <hash>7de62e64afa9bca8bcec521fd4b572bf43fd7e3e2f0dc4216dd2686c676d84f1</hash>
+         <hash>aca918d0be70a0f356d74404fff2a19ff2ab0834c77fbdb6072f1985ffda929e</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\isi.h</file>
-         <hash>3ac61ceacd3c89f602a23d537c7a11d78c9bd041bc3eba6682140ab7229905e7</hash>
+         <hash>f1ded52da1391a7a04670c694c65a651c9459867b354a59a1dac252f795d20a1</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\pwm0.h</file>
-         <hash>2bd95e601837229ac6634d2dd99ad859dffb6ee10584ba300deea27c11390a70</hash>
+         <hash>459306fc1d9409c699927e54905570f54f67f49f89dd7152d120090a6d6970ce</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\uart2.h</file>
-         <hash>41dcc1112c1b93f20672f9549aa154759f4396c188e88c250a000152c04e9496</hash>
+         <hash>d2036d4ba315a3e3bde118b3e602c3335adfea6a10f517125aec20d3f9173b64</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\acc.h</file>
-         <hash>9d07906a5b6fac4b22f8a7ae7b70c769094c728c46236503fadf5a8aa04255f0</hash>
+         <hash>e8221a03d3a5a268cf2cf5d8e131543c4c923bab4d926963e65e4622955ece70</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\portable.h</file>
-         <hash>c95eb0d549ff1c20edebfec41d73584b5a20d21df20a724084200954b9e8d252</hash>
+         <hash>7ade8f368002778c723b3c4e14084910b7225cd36363ed0c948e9ea36c6f251f</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\ATSAME70Q21B.ld</file>
-         <hash>92423bc949e7bdcd44071e9670e74d556fb51dd381101b19440aa562b8cc0088</hash>
+         <hash>f753bbdc19546506a1b768e6ceb6a339d8bbefb2b363713bfc98fdac809906e5</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\afec.h</file>
-         <hash>74632fe1bfa374142087c31c3307b3e5a087c3067f712f04f006f689e4a807bd</hash>
+         <hash>0d6ffc8c64e71db74c4abc4f61e371eecd169be8aa100ae63d2ca8a8ba08504e</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\trng.h</file>
-         <hash>54b9cf3f5f95801cada3de62dc783d443f57a631487e5c21a806378530661135</hash>
+         <hash>dd3083b7c3c5605fc8a51cab3e86374f743ba14668998d6c2c294371fee66c07</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\wdt.h</file>
-         <hash>6bec2d6979fb47fc7986c58dd99af05ba79c037de81c6f870771111d2b7eba12</hash>
+         <hash>5795d855dce095da1aed2ef62e1cf6c1ee5d565d916e0d6c9cb867f59d9bf091</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\rstc.h</file>
-         <hash>73fedeed470053b608e1ce05d4427d7580de954c4e6a80b419f2de7bd9253f7e</hash>
+         <hash>dd97bc5f55d34bb059e4fdd6925b587e9f98c5c45faa3b98466a9542d26499a1</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\list.c</file>
-         <hash>21fe8dd565f9610e1ff4a6bf7bebbd16842af13d3d2294f1dc67ad279fb01d22</hash>
+         <hash>db5c169cf3efd68da1c6a923ac84eebc724d602c940bde0b9b5f01f05028fde4</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\utmi.h</file>
-         <hash>d3e0b422fc0f0ccf381f58ecc76a3f39234f45860426f89107fee5035543f0e2</hash>
+         <hash>3987007cb0df8590260d714010b489512185fe74bb79011c9df3c8c5de836ed7</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\tc3.h</file>
-         <hash>b2b1b63b97ce81e6f521705dc55ada42251c000943255133fe541eb8f11020b3</hash>
+         <hash>7cd3daaa6025ba4709f710e76800a8301beb1d9911040785695bb400d000fcd0</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\usbhs.h</file>
-         <hash>987bb07b0cdb9ef15bd81fdedb21f9d0044cc363d6b69bbc630cf63d16115f7f</hash>
+         <hash>1a4117d52643846a7e21d2243ce211706754b96f0b4c3bd05f08ecd5f88371a6</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\gmac.h</file>
-         <hash>c54a10ab17ff2a3d35b18567ad36028db9c2fe02c81345124119cdb5d33aead1</hash>
+         <hash>1ac45ebacf9854b2a68bf5e2f05ee76a4b204c8a07dc9527192b620a5faa71b8</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\osal\osal_definitions.h</file>
-         <hash>6dc49e317b4557c5516a172c1437125874abd98ffcc7260e3422966078dcef7f</hash>
+         <hash>af2f2336fac0fd5b49fb2d1c8f81baa4f554101b06f130aaa608cd9685c4ac35</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\ssc.h</file>
-         <hash>6dbd1afc234c0ca9b3eaca6223edbb745b02941109d639b52bbe41137860ac48</hash>
+         <hash>c20380d308db594908540e9316db7e1492e6142225a603e44e2090e1d5b55a99</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\interrupts.h</file>
-         <hash>e76c614eac9b0a0ef46ff440e2fc9c4c0bacff51fb53629968b0aa44e6d3d540</hash>
+         <hash>1f35b2db76e77a8bf0da7db6b52feb2c2ada6e9897e73883be0ea68e0ce90d51</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\device_vectors.h</file>
@@ -7901,11 +7901,11 @@
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\same70q21b.h</file>
-         <hash>a716dc97909b50a4addc6ac05a279f0538e1b6ee48b6fbb97608a35aaf35e499</hash>
+         <hash>fa889bf8206b73742d06718fc7f0266cccf7c33b7020c41f48838b99f930fed8</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\mpu_prototypes.h</file>
-         <hash>783d9a41c90817eec55d9317475cc2663a785fc9a955c06d3207fcee6e0ec080</hash>
+         <hash>2b46a2511ce5d23a56bc83079333d8d0a2e33763e5829c9383252806887a3dc0</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\driver\driver_common.h</file>
@@ -7917,19 +7917,19 @@
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\spi1.h</file>
-         <hash>0c17c70a347032c71c24de54330cca55b3d0cc2e42d37f2ad7bddbda91203ad2</hash>
+         <hash>a1c71c6ae25c17a8759e9d909720b0a6b3e9de589451b79c35701265b65a48fb</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\wdt.h</file>
-         <hash>12da0903ee9830583b3c247ea76a02b9c03fcfe8f4334146d232357997f3113d</hash>
+         <hash>5f4d8383f522bd69fc21557fed273525498e54e0d0da7996d41120dfeb45e062</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\icm.h</file>
-         <hash>8b1a3d8bade42dcdc95a167508b7d2fa2da304cd1dbaf8c9ee99f5beea372d83</hash>
+         <hash>66a95f5c3554035b9cf51dc7464de454f18f0ce2c2b09c2977e56721670d9165</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\mcan0.h</file>
-         <hash>557f4ca5a9ef125deba30e568c9fbf723981c4dd70f4240d0e90a2b11cd486d2</hash>
+         <hash>fb6e423182fe0a212f119b1ea019d1b3d792b059526c30d930999a4b0f4c97c1</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\system\system.h</file>
@@ -7941,11 +7941,11 @@
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\i2sc1.h</file>
-         <hash>d14fd8b04014c7abda0c61b12904c62bb4ee63e2aac4ef9c64a7974233b8a16b</hash>
+         <hash>43a7bedafe8c112f74bf29109bd996db93c250913bbf4599c1c65ae333d47688</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\peripheral\twihs\master\plib_twihs0_master.c</file>
-         <hash>d195c4dd007260a04be02f50c2a4efe6897daf4160ac729f6ceb8a0d9a80ee04</hash>
+         <hash>d4a1c0f8dae130ce029e2291ea648b02c03ef968f4480e2d773ea1cf43b7f5b4</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\mpu_armv7.h</file>
@@ -7953,7 +7953,7 @@
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\pioc.h</file>
-         <hash>b21e2e7c36c53fceaf0959985816a328a9d08370a348b83a11003f321544a40d</hash>
+         <hash>8b3a0056ba9ca181ef3639a3ba96c46edc778cd5c22cd099d6fee6b30653385a</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armcc.h</file>
@@ -7961,19 +7961,19 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\FreeRTOS.h</file>
-         <hash>c8d9b7a52d092f37b4c3b821806bd6e8a30dbcc600960f9aed2b2f10f965c09f</hash>
+         <hash>03e9c94aba57e3cf7f4f73bc2d3eb4a96ae38f3425eedb5450622ca286475a0b</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\initialization.c</file>
-         <hash>9e4358ec990686c4fcda79f6e565fba51022c65e7bf0d69386222896a8cbfada</hash>
+         <hash>d46b3aa4af3c1a849a63db9c658020afa80fd1e10f840af3659ad55e953f1384</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\afec1.h</file>
-         <hash>8e4ef0776b13b63d4effca532e6c99f989fe5b2bf129d0d22d55ea055ce2d3d9</hash>
+         <hash>1bce34e357aac4b775b4358000cac0a93358e4c79e1b7e4fcac42a884756d9b9</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\rtt.h</file>
-         <hash>2d139efb5796e8b83421e5072e4c84f181e35d764983b0b7c4aa201e43b1d7bc</hash>
+         <hash>1e9fdd0b7b17eb7d3baa42124f48423333602546e1344dd0eb48e0bd560dc8ee</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armclang.h</file>
@@ -7981,7 +7981,11 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\startup_xc32.c</file>
-         <hash>99f155f0a79b5b95e4382f0a32e186b13b677c304c3583009ffef3d879309c85</hash>
+         <hash>eea4e495dc8487c0587ebfe6d915202cd456a4dde990a9847f3bd149ae8ec7d2</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_e70_xult_freertos\sys_tasks.h</file>
+         <hash>a78f35dc62ef3b44b2f70a56bf4df37837cd05e2fec7f4b35b69ccf9775cd2ab</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\device_cache.h</file>
@@ -7989,7 +7993,7 @@
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\twihs.h</file>
-         <hash>97460c3588e298eb35f56944caa6dd4720a5e12b62fba1a620ea59c4827c2fc2</hash>
+         <hash>38ee6f111198718409cc30199359753045854bcd9c053f3810fb36f69b9046ca</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_compiler.h</file>
@@ -7997,35 +8001,35 @@
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\twihs2.h</file>
-         <hash>4e997a8f2e347902e6b9b2d087bd0e0e8ea751b83db4f57341da75d34c367e93</hash>
+         <hash>31a160006a06425ecbac0785335fc588ee1d46e27a15d347d837f35ecabf8687</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\queue.h</file>
-         <hash>ff7a2139380ad0e2695bbc0d068db7a3b7e54ec41387b4c77acbe1aaa2921b7c</hash>
+         <hash>1b61c1669091e59798a34c32c0f1e234d3f6a645f47641753eceeb7e1d9ce628</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\FreeRTOSConfig.h</file>
-         <hash>edf4f59079f76fb67547865652a974e70c99ccb141e583f32a66cdc90b15e2e2</hash>
+         <hash>ef606c1bb403d60139ebb7526d38105f75442e72964cd1a22e3c6c1b36443afc</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\portable\GCC\SAM\CM7\port.c</file>
-         <hash>c13cf6b64c988ccf7783fb17d742b5e92fcfc29989b354167c28d6a70d938172</hash>
+         <hash>ed3868ee6c8e1c8f6645a3e03b9de3aaf3aca28417321f5d324420f9c1b736fc</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\uart1.h</file>
-         <hash>c4ee8497caf429ea8ff403ace6a84f49bf47313bac4de5b3cb61c11bd96646c5</hash>
+         <hash>771c27f43b9e7af032e0eb2f4b9bd82fa5c1ba2d92d17e976140e0dd3666603b</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\peripheral\pio\plib_pio.c</file>
-         <hash>cbcabbfcda9f907aa89d0a950fe390f37fe7603e9f9c3b6a397c045315a83647</hash>
+         <hash>3a7bb43e03d9fa56984d6b91f6aec6ae20d4040867269c3a2c116bc841989faf</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\gpbr.h</file>
-         <hash>86833690d326628e22a0ec031fc1ad6eddd728b863179de95a35a83407fd1457</hash>
+         <hash>9df095de730ec52cc511131c8b1fe364c7422669bfd513f85143c604e2672879</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\hsmci.h</file>
-         <hash>80073d00f1e0f5ff35125dc85530c96588942664c85798599c9be7d49c7cd398</hash>
+         <hash>a2c30964277e758f9d83f1d9cba891844610526f198341cef24a1c2b951c082f</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\peripheral\pio\plib_pio.h</file>
@@ -8033,31 +8037,31 @@
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\xdmac.h</file>
-         <hash>905e21cc16b785c0c918cfb9926d00ab840775d138264629437afe4da18b3f2e</hash>
+         <hash>93142f2181a594df4aee0cb8d5f196199d957956efedf42aebdb1780a0b54ef3</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\system\cache\sys_cache.c</file>
-         <hash>7266793f96d0991d1cff7006720bff2a3f6974ca34aa53e488763b2a9f307ab9</hash>
+         <hash>5f8c30e8077b915a4c4ff0515354b2877dc74c3236f307bdc1132307269fbf86</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\qspi.h</file>
-         <hash>4b897c5b1ea9a6e7e374974fef224977666e8360bac345340f4a1d341ce2b88d</hash>
+         <hash>64694f05140390311c485df6a956c6505420d7ff105e39271cca6ee85ed7e0e1</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\rtt.h</file>
-         <hash>9cc987e2d66e82e2d218454b3326fd0736ad1812aacc25c99806ca7eccd00a50</hash>
+         <hash>bc3446644f1cb7d7efcf4cb3f2d05c42e159a95600529d4e8b334b8d60d27be1</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\i2sc.h</file>
-         <hash>929c154958f13481b063e36f36e839169b1900483c2aa5c1a68fcd98b8fcbd8c</hash>
+         <hash>9beb8686da7ce33b96157d4851e6f287c4484ce7bacfb0e0b39cb9d1f9a42141</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\tc2.h</file>
-         <hash>b71111a32be19b0c729d36e691627cf64f58b1a6f88001a00fb577a79f60617f</hash>
+         <hash>c529bc92bbd2dd4a8095a46e1cfe5481d2145bb875b2e1510de3e3123f6faebc</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\system\system_common.h</file>
-         <hash>0dbf2f60b29c97426e70187bc59c652ab5a355f51cfbe3f195ff1c8c6c0b1602</hash>
+         <hash>c9f34bd226f8efab12f5766e77f8355996cd0430b50e0f6ee30258664c494984</hash>
       </entry>
       <entry>
          <file>..\src\main.c</file>
@@ -8065,7 +8069,7 @@
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\aes.h</file>
-         <hash>5d658009d2688e2cd73be3048b5c4b425d2c40c840b40ef31ee9c82960f7bb45</hash>
+         <hash>c92e75eb1478a49214543a20e0f54baa6595ae91f65f4110b681240f1db1b0ba</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\user.h</file>
@@ -8073,43 +8077,43 @@
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\usbhs.h</file>
-         <hash>717436e663b419ea854773ac959daded04e890478b550e880af9f3fbedde1751</hash>
+         <hash>260d9ea39d641b8b16812e7f8b477747ea906576a399f837da8dcd9a3235a89c</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\deprecated_definitions.h</file>
-         <hash>1947473678873963f3193497280d907f59a5936f92df6395327f7ca684cb1aa6</hash>
+         <hash>35000a143464bbbd8df7c9a6f066a64598a24da5174a7be33972e62bfbd75f4d</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\system\cache\sys_cache.h</file>
-         <hash>3407ecac4da455d4b8ba70043f10c20b10e1304e92402db824ca5efa6a2f8402</hash>
+         <hash>b4b3a4e7434759c9bbcd3c6a0ab97558eb2a007f083a4eb76dbedcb2e2c3d86b</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\chipid.h</file>
-         <hash>6d96f10f344e16a0b72ddac1d7ade7da7598db5896f283d764b71bdb8301da06</hash>
+         <hash>e217627841e681ee5168c8ba7cc347b48f4569662eed54556a89bd9bc1d3aa1e</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\smc.h</file>
-         <hash>31a050c009808283d0a0bae1351336ba8ec8b0d9bed9e7ada0e04d6b42125402</hash>
+         <hash>00413aa1cd2146267bfd136c169a5447e314edb35388823f51670e27f2b55f25</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\aes.h</file>
-         <hash>25bcd09872364c9a5751baa1bca708657fc9083bf95a917cfb1a9e5b54c4bd9e</hash>
+         <hash>062cad188de81ba6c6326432ed0196215f5bca45ed716a97446028b201437d54</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\mcan1.h</file>
-         <hash>405f03eb55c70fbbe902ff63bae8137d0bda06bbe90c48e9a15b5ac9808ab72e</hash>
+         <hash>9925ba5309f41a628782406b9f3455a1c21376cb57b042c3d23a3f332e921c7b</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\system\int\src\sys_int.c</file>
-         <hash>23e798871ce6f7b4b0e0dbd5cb2cad7b43bd2dd1f38152f28d14f5a5b7a2938b</hash>
+         <hash>4281667cc2b84c9e4be1f0dfb3f7d42b77d36c5dcf6513d29ff40262f746cfc6</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\usart0.h</file>
-         <hash>e2b74de7c453345ac6f70ecca34f05b2fbd91dc688386968949693f34b189c96</hash>
+         <hash>2ceaccc49f914abcb4f64fbcc4dfbb4dfe0c2c26bfa55b2d3919c85dc708066f</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\tc.h</file>
-         <hash>3cc6ecd8c00e5e8e02eb5c1308bb987b9597e2bfe0be3d058cfc9c55644d1f77</hash>
+         <hash>cd831ac0fd9237f34821b995bc3e065f3ff360573b6321ccb7a618313bf81d2b</hash>
       </entry>
       <entry>
          <file>..\src\app_i2c_eeprom.h</file>
@@ -8117,15 +8121,15 @@
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\pmc.h</file>
-         <hash>23ac281b5810f96cb8b7208401005838b835f486618857e66881628c9d505bce</hash>
+         <hash>0a9ea131b74e6876ac83bcea8ca2cf06883b8afc91fcc407bf74ab0fdfad7def</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\i2sc0.h</file>
-         <hash>2689c0feb03ff0826cf81aa0d3805f98e0cd4bafa275ae7968c54244715f623e</hash>
+         <hash>e8fc42fe25c72e42ebc5e7315399d9df4249386740be7eafa62f34d68a3524b4</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\piod.h</file>
-         <hash>463b5612c7250fa96ab7c96c425350f69eab17a38467e867793b84ba3bc3f319</hash>
+         <hash>2d5155fd77157ce6dd41eafd0834103d492e526a7b3ac1762e24b92466133903</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\libc_syscalls.c</file>
@@ -8137,35 +8141,35 @@
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\usart.h</file>
-         <hash>179136d813ac8595dc9fd93ef8cac8bc4401e5e8ff5e20ae4b13fb85fd8a0de8</hash>
+         <hash>43eeecd30e9ad953bba61d6c0413b6e488d2b0bdbe066622ce33e38ff602b684</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\exceptions.c</file>
-         <hash>b268111879b5fa0ab2eaf79fc5d4bd1aa046c54d97805246ce08964100a70bfb</hash>
+         <hash>89852728a9a1cc4c9746839cc3caf5308b8698c0c30bf6bfbad0db9e552a387e</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\semphr.h</file>
-         <hash>6bc571df5182f06bcafe5280fdf762bbba2bf1dbb7867ae3721ce2d7e3e51dae</hash>
+         <hash>c624e8cdfc07844d4cf35382f3cc908c872375c7a3048482bdc110bda88cc4f2</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\timers.h</file>
-         <hash>2bf5b5f5d83684c1e6d90e5bd17da9de41d38ed61ec0410f94595ff343f89174</hash>
+         <hash>ee0f596a54137e26ca806ebf067c4c6219a61348f1cbae8861a43d2d4891e1f9</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\tasks.c</file>
-         <hash>86e561f9b16402f6e25ea1f8dbe530658cbe846e25e29a098a50d0dc18370fff</hash>
+         <hash>da501bfe8f5ce6e96f761b19d37ad27056c1f2552b621afb18204bf4b56e1842</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\uart.h</file>
-         <hash>55cbe75f92a47f79c2fd69d5a7a6028b771324db924cbd3001d6221f739d034f</hash>
+         <hash>30118be931f001c8d4826a656af1484c8cd0e00610165302bd78df5ce12f16b2</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\smc.h</file>
-         <hash>ae0f2cd3935f519c34e0c41d7e4e86a6b747b5bfa51c08d14e9c02838a55c5b9</hash>
+         <hash>cbce266d6c85851508ccc9ee831ef48c55a688d8e28f7e45bbd6a7ecafcb9542</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\FreeRTOS_tasks.c</file>
-         <hash>f97f4e54a7511e5aea34f583061c628bf718b1024af6ec4cff55cb50365305da</hash>
+         <hash>14020d617b96dd2814e1211f6e3b645bcf5e2bd3179c23fe7dd16bc666fe9463</hash>
       </entry>
       <entry>
          <file>..\src\app_i2c_eeprom.c</file>
@@ -8173,11 +8177,11 @@
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\spi.h</file>
-         <hash>f37349702dcb67790d5b109b53150e330fb2addf452bb74182799066060b4b50</hash>
+         <hash>22a982b38066c68e48bbb89f9b4b4392f823e3e4a8e3d73ef2423fba2d531454</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\event_groups.c</file>
-         <hash>82542c835466f2abd0eeb2988a0bcecf3d6a14c9dd87ad4a7ca325b15afbce95</hash>
+         <hash>76e967b14d231e4f31f014f1564f359a7bfd36bfa263ee6f437afa8c056df657</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_version.h</file>
@@ -8189,67 +8193,67 @@
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\hsmci.h</file>
-         <hash>6d38ba4a80eb93f2a7b613af8275bcf0e0c9610a18ce38965a8b8ddb633e2a09</hash>
+         <hash>2a98de80113db810ecafa8fd166ea66059df2101b88606fb79a01d53bd047ba9</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\uart4.h</file>
-         <hash>54f825ead0fbd2546bda63271516ad8707c46dcc74f63036f477efff3a8646ca</hash>
+         <hash>b31bab9c825f737c852fe21c29275e49532abe929b4e390645fa63fed40dc257</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\matrix.h</file>
-         <hash>a39120b6cfef80d9c6142d66ae45711afbaeaa4b6a29de30570680afc2b47692</hash>
+         <hash>ec7b2e1700ba7e3c465f3922e13dc4f3ee399a200539b48e1dbced0783ed2972</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\efc.h</file>
-         <hash>6289c6905e0eb29e5a736a251104d1cd87adbfd8bb8d5ae62da7dbb239c09a6d</hash>
+         <hash>8566f3b32d38cc7629f8fdf18f362e6e1cf0052bd53b2f109eaa29444a575293</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\uart0.h</file>
-         <hash>3d4aaf7afd380d7515003c3912693ec0c976a32429aa6fb3ca43c5c2a11449b8</hash>
+         <hash>342420c5047b20e2e4bd030c5c5aaeebd9b714fdda47c8452b29ca764e36fdc7</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\system\system_module.h</file>
-         <hash>981fac23277aa77f682e7a9a28d436f892006cd5b4c7f23f50941b6d9a30e740</hash>
+         <hash>96c74368801b0a7aaa25aec3ec2cb0d483250385f103ffc1ff64089b4ca2c6d9</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\rtc.h</file>
-         <hash>e64db8df7309625b10e2c9686d0bb01b6824769ea9691033b6086e9d988507b5</hash>
+         <hash>f485984e812eb2f88448484128343a00562ccc3c4a33d2b1aaf8e24edd0282bc</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\driver\i2c\drv_i2c_definitions.h</file>
-         <hash>ce994a96a3ec4e507b5a3fb9663b7bafb31ca0e43791fba475c1d5a06f09c28d</hash>
+         <hash>929077879a4fe3e202ecbe796f076fe88435ea327ec0d8c573de6df7151e8601</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\portable\MemMang\heap_1.c</file>
-         <hash>d03a08079e678cc6e6a1e2105684ab0082d190bbb731f6807d75e1aca260e98f</hash>
+         <hash>286e3fee81c9107fc6dec40405f500cabdca56836d29747c182f0899bb8997fd</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\tc1.h</file>
-         <hash>d76ee0edc6fdf90dd56f15bf6ac34b2f7db90796ba14f532faaa94fbac7d6398</hash>
+         <hash>6c7a8418ad2e995173f74c49c2b99b01e6d890b7e39906e53802bd8c881c49d9</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\xdmac.h</file>
-         <hash>a4152dab99f0cc9cfc39c2227ee85e2729a9b7b43c0f7ebd3e25ede4857022f2</hash>
+         <hash>25f3cf7664be2fb9589bebb45b0719fc24051591c4ac05b062807a7bb6950d02</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\configuration.h</file>
-         <hash>14a415314349f41ad8f3503f9b3abbfe19bcfa059eefe03c08a1a828c3fcbbc0</hash>
+         <hash>4a358fa057d647191345c6e66f8c824b020c3985e150c25ea436c3dacb2a672b</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\fuses.h</file>
-         <hash>528d7e595cc3db17b8bec4e84dd41926a879d2797c2967c060e5ffaa5dd5382f</hash>
+         <hash>a3adb3a2ff0c2853b494ed936c0e6529137ce13166c27ea2490eee5f2b3b4bbe</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\portable\GCC\SAM\CM7\portmacro.h</file>
-         <hash>665d412b39738916febb194a546b3478c8ad352f868a8874e26343d3f9912467</hash>
+         <hash>df927dd0711b4846b47c858a456715d828dcbfdcd5e195e1903398db7fdb5166</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\supc.h</file>
-         <hash>62c5f41a81f4ee676d980d1342b314cf399364220edd826cfbfc2734f9e0e452</hash>
+         <hash>ea1a9865e9039c22733bae13d4cb3cc71353f6e9da1f533a98a67359a6e69538</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\mcan.h</file>
-         <hash>3df62e43c6e3d3b751ba57de6a43bb4cd5e242d390a55e93d8a8949838a6fcf9</hash>
+         <hash>ba76698479731dd67bded45c94d54434306521480533bb56fb65546d7853dcfb</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armclang_ltm.h</file>
@@ -8257,59 +8261,59 @@
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\stack_macros.h</file>
-         <hash>06b5b66a9b98ad4998c82d353c0108b9db1a846951b8865cbdeeef90c5bbe2fe</hash>
+         <hash>3cddf2b3d47ae387e376ac75eb468f9d8ffb575d68c143e08d54af4087474cce</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\rswdt.h</file>
-         <hash>71aa1ce8781fef9f8a031be6d22e797eb78b86c743e17cdc73f2b96b96f0a580</hash>
+         <hash>0d5ca866dca31f5a84b584d95daa84238dfe27366edd7c2eb73e93f1888f3739</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\interrupts.c</file>
-         <hash>c4945924007e90fdcea2b00ed6a5c44aadc741ab5f504472fdc38ad1e84078af</hash>
+         <hash>9013673bed8173a706e9ee6ffa31d6d4dbdb080d7b3a5e4d53837ed2805dfb8f</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\usart1.h</file>
-         <hash>90da42367f3c68ad2ef6df61c51e9f1e61a10656a8774c06df569631ad57e581</hash>
+         <hash>005f7cd7d504b70eebcf02599d0987b6525301dc563745605adb45e8ef6e5a10</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\toolchain_specifics.h</file>
-         <hash>2559d185e92918f61c308a62200cb0cda72726c63111561524dd53afcc635a18</hash>
+         <hash>406ef48ae415706beb0796977cab09342077f7b1efc3f24767bd97bbd5e5a433</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\pwm.h</file>
-         <hash>f83a43911266388a83bd4accb19f09225f8ebd73511539a1713bb9556929e15d</hash>
+         <hash>70a7e5461060b3f3284bebc6523abc6b3360f16dcb9e0b2958c165efd14896cd</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\matrix.h</file>
-         <hash>8e3b49619a02dfbe5c4f5a881e516220075f6260c73a41d612402dbc1b381a65</hash>
+         <hash>6a63e48e81a8e6703512c66d6087fbeceee574decc32b0c5ec72e07096158ecc</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\isi.h</file>
-         <hash>d86208ea3681bb131469014b15f6bb7ba824cb8f6d5d0b6ef6723ec1cbbb2026</hash>
+         <hash>05992dc084ab9cd5fa356a484909086f7ac6022b628854f7d5d33580f89be169</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\pioe.h</file>
-         <hash>eb1e92ff812b70d7d784a93f547aa860efa9df8d837ec62fe385c316c940ba78</hash>
+         <hash>18aca977be9e3028b0088287566b7705d28cd29cc8e6696f6e045915ba03f4a8</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\projdefs.h</file>
-         <hash>292c78c91dbf63a6aa028f381b1dd548d549949f4fb9fcfd97f949569e013d76</hash>
+         <hash>8faf4220ded25b00fd72424a2fa4e63e154713ae7b42f7270f1e3289362a6312</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\dacc.h</file>
-         <hash>eca494362fd6c120e8624a7ab083554cab6070b409ffeb01fd0285bdf6ccbb11</hash>
+         <hash>eb7bf705011433e9d1371d0f0308269d46f5df67664b6ad4a283808e4be3b713</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\pioa.h</file>
-         <hash>5dbcf966e81d8d8277971b9b2d7f74723ae6602a97debdef22036c44808cdef0</hash>
+         <hash>c775fefbd337023d5226bad371efbe6a223e827895c9276f273a54987c688b04</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\ssc.h</file>
-         <hash>32353866de4fa3bc0ec54ce500cee2460435e975fdbf710b0a45ad3a47453eae</hash>
+         <hash>4031861fa380f898242f6175decb7465b130632cfa8eb3e85be9e076717282d1</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\message_buffer.h</file>
-         <hash>0f5a90e8303d9aa2a9c897d6b90da50df21776c6bde7bf8c792cacffa3048c8d</hash>
+         <hash>9a8141d3d6c8044a57d7e448180c9bd2ed32e45ded32be288d095a39dced91ab</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\driver\driver.h</file>
@@ -8317,11 +8321,11 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\peripheral\clk\plib_clk.c</file>
-         <hash>4c6f0fc12e531585a62477a58d5c0c2e0a5daa7b9caa93f20a432fc2131a23c6</hash>
+         <hash>eda72ebd28b0ce7059d6c53fd107692774ab1dad0371d7e059bb0a74b7cbf7da</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\chipid.h</file>
-         <hash>fb44fbdf7b5391b4c7fe007a419a6edaff7f8a70b086e0f4b6987ee4659c7108</hash>
+         <hash>cf69e428dee5c01d86f2919ef196fe97c7a9b44cc64c0a9c53221cdf132a0023</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\bsp\bsp.c</file>
@@ -8329,15 +8333,15 @@
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\dacc.h</file>
-         <hash>cf4a75c90669f94eb62dc04d3a7fb5b3af40b10a7062adcc1d79c42451eb18f4</hash>
+         <hash>f94045ff46d385a547279d494971427621d7ec7834b72b95cd8846f6c11dfc1b</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\supc.h</file>
-         <hash>2d71712ffcdeb9e1c81b391c6ab1140dcd5cba0152c2db97135199969c0f850c</hash>
+         <hash>b8947cbc553e6b3a0dd64199c2a5087fb3ac1869404973da978b83b6a1edce4a</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\acc.h</file>
-         <hash>15a80f769d261e5c248785ae7806b711acd73f5048ea976ac7884e2a5d366778</hash>
+         <hash>cf38c3be058a06e5744a70934df0e17beaec2ef8448572355a68946283fc0095</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\peripheral\clk\plib_clk.h</file>
@@ -8345,23 +8349,23 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\bsp\bsp.h</file>
-         <hash>7f7c7aeb6bcaf917d516ced403f0a74d96861ad92fc349f85c3e25744c8e70d7</hash>
+         <hash>7c5b338b67dc1404ac96c8a1e4c0976143deb543e64bec64beed58dff969ad4f</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\event_groups.h</file>
-         <hash>a73c0b319370116d5981d5dacbabad3a775f85ae540ef70b4ced1c99c9ac6cd5</hash>
+         <hash>7b3dd12a50d649c124c1af8be742671b9965b6f924310bda7984fe1b65c7f54a</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\queue.c</file>
-         <hash>4452e3b0e6446b74c7d010d308072ba0a35c1f92bcf3882a54bf3796a72517aa</hash>
+         <hash>5cdf4fa35fe059446effff5bf20deaf83ddffb08921bc198fda106b1d17dd894</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\driver\i2c\src\drv_i2c.c</file>
-         <hash>be0e47aab2bf2959f4a67a286ddb0191c9a4f1a17aa6431094130d84ed241e70</hash>
+         <hash>0f8d004b3a1546705accef2a57e1fe61e1ee03854d49b6060b0ca0e3c98edffe</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\icm.h</file>
-         <hash>cb6b0539a4a73385a70efd4e861dd42d4c2a0f13b6b6d4cda2e509c594f14119</hash>
+         <hash>b9b57857d178e16f9aa128a10ef8b0898e133cf42876e1b94463776cac3bd148</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\core_cm7.h</file>
@@ -8369,35 +8373,35 @@
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\gpbr.h</file>
-         <hash>a59508d8485c64283c525613f1e72ae0da62fc43cf821eb10a780465df88406d</hash>
+         <hash>8cdfcf81342f36abd32d859df5ad8299b877074c3a6481be0503c80d7f51ea0e</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\rstc.h</file>
-         <hash>943ddf884d18d230d66d65d02f551e2696d48855594fc9c8c0385ccf24596ac4</hash>
+         <hash>0379a7c8769354614de2b508d5ce9768336fafd39c212d90ffd756f9a83354d8</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\pmc.h</file>
-         <hash>76337766d2b1d6d505df31c8cfe070092befe57426ccf971b68beaa4dc2535cf</hash>
+         <hash>413671fb70676eb743c897ce0dfdd0ae63cba36be420a9e6b010c08d46d6e43c</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\peripheral\twihs\master\plib_twihs_master_common.h</file>
-         <hash>acad5aed5a4a6eafa661328807006fe847e99857bc01378cd58003c0389aacf9</hash>
+         <hash>64d149b81c2de18e7a7fb94212d965bccb3b865d8b59acb548dbbff3306f554d</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\twihs0.h</file>
-         <hash>da861542e7ef2f86d9ee1af8b42f9a6ee899ac5d25bd3b0f0c5c883fedd33106</hash>
+         <hash>7ff4ac091107e6681a111ce7e4c9801ab0abdebbf0be102f93b6a4aae7b32248</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\include\mpu_wrappers.h</file>
-         <hash>0f7a750669b24c41af51482eb76c867a1ed11c14dd4877d07433db3953d9a792</hash>
+         <hash>5014408cc33f0f616215f2b48c67b0d47ccc35bfd5f0044ac653b5bbc6cf5778</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\osal\osal.h</file>
-         <hash>d42702188d00d3e1d7219d7eef030485896bf8b5ebe55318656e82f0fbb89788</hash>
+         <hash>8404fbe44807fa0484ffb38843a72cb9af8e31c9c30bd1b2594e609b8ea317d9</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\pwm1.h</file>
-         <hash>ddb4c3924b2d5cd5d9dc46dc4028ca18a2a1855bfbd2c261b5107a38bb5268c7</hash>
+         <hash>8352386ffb2927bfd703d7ac5429950b9e88f1adc2b7c126680881cd7834e91a</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\peripheral\efc\plib_efc.h</file>
@@ -8405,11 +8409,11 @@
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\uart3.h</file>
-         <hash>e5cd6d115b4b15d191044196c5bfecc265362c8b63c2815f29fa28221ff0d744</hash>
+         <hash>5376822f4e0041b25f97bb7c2d1d27bbd618356ef918b01dbacef73099073dda</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\driver\i2c\drv_i2c.h</file>
-         <hash>1add02b0380f67be5dc9707f01b290af08eccc0957775327f44a8c1afc823410</hash>
+         <hash>a2e3e35a45be2dffd93f381c5eb7d50a9f2fd955aee73cdd3da3178c7c3cfed9</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\peripheral\efc\plib_efc.c</file>
@@ -8417,11 +8421,11 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\peripheral\nvic\plib_nvic.c</file>
-         <hash>084da00e6f8c15b259887f0e6a8194f0f68415f61f3bd44e951110e38348219a</hash>
+         <hash>11d07786868595526d1e8288e36043dd4f80f75f747e91d336e364e17b8ecb14</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\system\int\sys_int.h</file>
-         <hash>71e36331ee689ae305b3d8ec49948e3dde0324b65f51bf38f4472b900a421ed6</hash>
+         <hash>dc104ae181fd5309e1bb42896246644fae95915a8e639b23ecfccc8840850274</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\peripheral\nvic\plib_nvic.h</file>
@@ -8429,31 +8433,31 @@
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\definitions.h</file>
-         <hash>0eafc3b4d453def834851d86c5e3953effd7310535c6d43350399d20634f1152</hash>
+         <hash>ed2962765781da4df745ac071da8cc81c1937feab825c4bc12685251b3ee04a7</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\rswdt.h</file>
-         <hash>fd18c6492287d3b86299d9c26b8f6959314cd7e08e0116a5adb30724074f31a2</hash>
+         <hash>e415672b7fc1d1cd7c629b5af6c341c7dad98c749a27d4abf8422890e4f2c24d</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\instance\tc0.h</file>
-         <hash>17ededaf7c63530dc65d54b76440101c1c4485e9e971a9256ed80e2a858eb9ca</hash>
+         <hash>e3bc4a489d22ecd2be2d5ab5145a8c92857d9ae1a3ee4c7ad69d66b9c3bcb6bc</hash>
       </entry>
       <entry>
          <file>..\src\third_party\rtos\FreeRTOS\Source\stream_buffer.c</file>
-         <hash>a62731cd211dd9caf70958b229d4a3a607ef12e6fbfec573a0d089f21c45f34f</hash>
+         <hash>0ec303ba296caca5de955dc470bcadd134fb15b192ddf61c9afc92070bc1039a</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\osal\osal_freertos.c</file>
-         <hash>6f35cfd335587dd112d0ac648ae99539a5acbb98ba80ce6e8c7c855e7b8d7465</hash>
+         <hash>85201651ffb4dad86674b478746e0dc8cd833f98b39c83efc2ae3639f3efdd3b</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAME70Q21B_DFP\component\trng.h</file>
-         <hash>42cadd19c1af027da26fa4d99349c9477e66d4d4f45e6c50f7d90f7d9d2ef457</hash>
+         <hash>596e902c4669af0971ac41f4125c820b9dcabfb69b3cfdf378cbfdd36f5ef97d</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_e70_xult_freertos\osal\osal_freertos.h</file>
-         <hash>ca5e502b9f076c4bdc8d97ac2e4cfdfa5d1b49f7d64222c353fac4dcd794bc7c</hash>
+         <hash>7ad9faa903d8587bab9490660328f134b8e027f9c24bca47201f3f96f3b99474</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>
