@@ -95,7 +95,7 @@ static uint8_t CACHE_ALIGN work[SYS_FS_FAT_MAX_SS];
 static SYS_FS_FORMAT_PARAM formatOpt;
 
 /* Create an array for reserving region in RAM for Fat File system */
-static char CACHE_ALIGN RAM_FAT_MEDIA[DRV_MEMORY_DEVICE_MEDIA_SIZE_BYTES] KEEP;
+char CACHE_ALIGN RAM_FAT_MEDIA[DRV_MEMORY_DEVICE_MEDIA_SIZE_BYTES] KEEP;
 
 // *****************************************************************************
 // *****************************************************************************

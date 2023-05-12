@@ -1,23 +1,23 @@
 /*******************************************************************************
-  Memory Driver RAM Interface Definition
-
-  Company:
-    Microchip Technology Inc.
+ System Tasks Header File
 
   File Name:
-    drv_memory_ram.h
+    sys_tasks.h
 
   Summary:
-    Memory Driver RAM Interface Definition
+    This file contains declarations for task handles.
 
   Description:
-    The Memory Driver provides a interface to access the RAM peripheral on the
-    microcontroller.
-*******************************************************************************/
+    Task handles declared in this header file can be used by the application
+    to control the behavior of the tasks.
 
-//DOM-IGNORE-BEGIN
+  Remarks:
+    None
+ *******************************************************************************/
+
+// DOM-IGNORE-BEGIN
 /*******************************************************************************
-* Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
+* Copyright (C) 2023 Microchip Technology Inc. and its subsidiaries.
 *
 * Subject to your compliance with these terms, you may use Microchip software
 * and any derivatives exclusively with Microchip products. It is your
@@ -37,49 +37,20 @@
 * FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
-*******************************************************************************/
-//DOM-IGNORE-END
-
-#ifndef DRV_MEMORY_RAM_H
-#define DRV_MEMORY_RAM_H
-
-// *****************************************************************************
-// *****************************************************************************
-// Section: File includes
-// *****************************************************************************
-// *****************************************************************************
-
-#include "drv_memory_definitions.h"
-
-// DOM-IGNORE-BEGIN
-#ifdef __cplusplus  // Provide C++ Compatibility
-    extern "C" {
-#endif
-
+ *******************************************************************************/
 // DOM-IGNORE-END
 
-DRV_HANDLE DRV_RAM_Open( const SYS_MODULE_INDEX drvIndex, const DRV_IO_INTENT ioIntent );
+#ifndef SYS_TASKS_H
+#define SYS_TASKS_H
 
-void DRV_RAM_Close( const DRV_HANDLE handle );
+// *****************************************************************************
+// *****************************************************************************
+// Section: Included Files
+// *****************************************************************************
+// *****************************************************************************
 
-SYS_STATUS DRV_RAM_Status( const SYS_MODULE_INDEX drvIndex );
-
-bool DRV_RAM_SectorErase( const DRV_HANDLE handle, uint32_t address );
-
-bool DRV_RAM_Read( const DRV_HANDLE handle, void *rx_data, uint32_t rx_data_length, uint32_t address );
-
-bool DRV_RAM_PageWrite( const DRV_HANDLE handle, void *tx_data, uint32_t address );
+#include "configuration.h"
+#include "definitions.h"
 
 
-MEMORY_DEVICE_TRANSFER_STATUS DRV_RAM_TransferStatusGet( const DRV_HANDLE handle );
-
-bool DRV_RAM_GeometryGet( const DRV_HANDLE handle, MEMORY_DEVICE_GEOMETRY *geometry );
-
-#ifdef __cplusplus
-}
-#endif
-
-#endif // #ifndef DRV_MEMORY_RAM_H
-/*******************************************************************************
- End of File
-*/
+#endif //SYS_TASKS_H
