@@ -55,9 +55,9 @@
 #include "system/console/sys_console.h"
 #include "system/console/src/sys_console_uart_definitions.h"
 #include "peripheral/efc/plib_efc.h"
-#include "peripheral/usart/plib_usart1.h"
 #include "FreeRTOS.h"
 #include "task.h"
+#include "peripheral/usart/plib_usart1.h"
 #include "system/int/sys_int.h"
 #include "system/cache/sys_cache.h"
 #include "osal/osal.h"
@@ -73,6 +73,12 @@ extern "C" {
 
 #endif
 // DOM-IGNORE-END
+
+/* Device Information */
+#define DEVICE_NAME			 "ATSAME70Q21B"
+#define DEVICE_ARCH			 "CORTEX-M7"
+#define DEVICE_FAMILY		 "SAME"
+#define DEVICE_SERIES		 "SAME70"
 
 /* CPU clock frequency */
 #define CPU_CLOCK_FREQUENCY 300000000
