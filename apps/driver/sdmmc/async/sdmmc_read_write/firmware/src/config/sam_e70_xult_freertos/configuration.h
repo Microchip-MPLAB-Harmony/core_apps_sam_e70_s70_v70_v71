@@ -96,7 +96,7 @@ extern "C" {
 // *****************************************************************************
 // *****************************************************************************
 /* SDMMC Driver Global Configuration Options */
-#define DRV_SDMMC_INSTANCES_NUMBER                       1
+#define DRV_SDMMC_INSTANCES_NUMBER                       (1U)
 
 
 /*** SDMMC Driver Instance 0 Configuration ***/
@@ -111,7 +111,7 @@ extern "C" {
 /* SDMMC Driver Instance 0 RTOS Configurations*/
 #define DRV_SDMMC_STACK_SIZE_IDX0                         1024
 #define DRV_SDMMC_PRIORITY_IDX0                           1
-#define DRV_SDMMC_RTOS_DELAY_IDX0                         10
+#define DRV_SDMMC_RTOS_DELAY_IDX0                         10U
 
 
 
