@@ -60,7 +60,7 @@
 // *****************************************************************************
 // *****************************************************************************
 
-SYS_MEDIA_GEOMETRY *nvmGeometry = NULL;
+static SYS_MEDIA_GEOMETRY *nvmGeometry = NULL;
 
 // *****************************************************************************
 /* Application Data
@@ -77,7 +77,7 @@ SYS_MEDIA_GEOMETRY *nvmGeometry = NULL;
     Application strings and buffers are be defined outside this structure.
 */
 
-APP_NVM_DATA CACHE_ALIGN appNvmData;
+static APP_NVM_DATA CACHE_ALIGN appNvmData;
 
 // *****************************************************************************
 // *****************************************************************************

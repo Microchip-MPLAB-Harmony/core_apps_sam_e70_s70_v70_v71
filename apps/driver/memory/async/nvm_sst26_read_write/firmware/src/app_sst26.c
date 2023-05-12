@@ -60,7 +60,7 @@
 // *****************************************************************************
 // *****************************************************************************
 
-SYS_MEDIA_GEOMETRY *geometry = NULL;
+static SYS_MEDIA_GEOMETRY *geometry = NULL;
 
 // *****************************************************************************
 /* Application Data
@@ -77,7 +77,7 @@ SYS_MEDIA_GEOMETRY *geometry = NULL;
     Application strings and buffers are be defined outside this structure.
 */
 
-APP_SST26_DATA CACHE_ALIGN appSST26Data;
+static APP_SST26_DATA CACHE_ALIGN appSST26Data;
 
 // *****************************************************************************
 // *****************************************************************************

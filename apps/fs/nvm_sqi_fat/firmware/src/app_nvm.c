@@ -93,11 +93,11 @@
 #define ORIG_DATA_SIZE              4
 
 /* This is the string that will written to the file */
-const uint8_t writeData[WRITE_DATA_SIZE] = "Hello World";
+static const uint8_t writeData[WRITE_DATA_SIZE] = "Hello World";
 
 /* This string contains the original value of FILE.txt (before being written by
  * the demo */
-const uint8_t originalData[ORIG_DATA_SIZE] = "Data";
+static const uint8_t originalData[ORIG_DATA_SIZE] = "Data";
 
 // *****************************************************************************
 /* Application Data
@@ -114,7 +114,7 @@ const uint8_t originalData[ORIG_DATA_SIZE] = "Data";
     Application strings and buffers are be defined outside this structure.
 */
 
-APP_NVM_DATA CACHE_ALIGN appNvmData;
+static APP_NVM_DATA CACHE_ALIGN appNvmData;
 
 
 // *****************************************************************************

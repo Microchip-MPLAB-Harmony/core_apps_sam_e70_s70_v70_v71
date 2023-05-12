@@ -89,12 +89,12 @@
     Application strings and buffers are be defined outside this structure.
 */
 
-APP_DATA appData;
+static APP_DATA appData;
 
 /* Application data buffer. Adding 1 to size to use it for Unaligned throughput */
-uint8_t CACHE_ALIGN dataBuffer[BUFFER_SIZE + 1];
+static uint8_t CACHE_ALIGN dataBuffer[BUFFER_SIZE + 1];
 
-uint8_t *dataPtr = NULL;
+static uint8_t *dataPtr = NULL;
 
 static const char messageBuffer[] =
 "\n\r-------------------------------------------------------------------"
