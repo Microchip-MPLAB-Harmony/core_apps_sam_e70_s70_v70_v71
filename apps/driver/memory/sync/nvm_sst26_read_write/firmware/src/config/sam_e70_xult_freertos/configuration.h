@@ -96,13 +96,13 @@ extern "C" {
 // *****************************************************************************
 // *****************************************************************************
 /* Memory Driver Global Configuration Options */
-#define DRV_MEMORY_INSTANCES_NUMBER          2
+#define DRV_MEMORY_INSTANCES_NUMBER          (2U)
 /* SST26 Driver Instance Configuration */
-#define DRV_SST26_INDEX                 0
-#define DRV_SST26_CLIENTS_NUMBER        1
-#define DRV_SST26_START_ADDRESS         0x0
-#define DRV_SST26_PAGE_SIZE             256
-#define DRV_SST26_ERASE_BUFFER_SIZE     4096
+#define DRV_SST26_INDEX                 (0U)
+#define DRV_SST26_CLIENTS_NUMBER        (1U)
+#define DRV_SST26_START_ADDRESS         (0x0U)
+#define DRV_SST26_PAGE_SIZE             (256U)
+#define DRV_SST26_ERASE_BUFFER_SIZE     (4096U)
 
 
 /* Memory Driver Instance 1 Configuration */
@@ -110,24 +110,22 @@ extern "C" {
 #define DRV_MEMORY_CLIENTS_NUMBER_IDX1       1
 #define DRV_MEMORY_DEVICE_START_ADDRESS      0x500000
 #define DRV_MEMORY_DEVICE_MEDIA_SIZE         1024UL
-#define DRV_MEMORY_DEVICE_MEDIA_SIZE_BYTES   (DRV_MEMORY_DEVICE_MEDIA_SIZE * 1024)
-#define DRV_MEMORY_DEVICE_PROGRAM_SIZE       512
-#define DRV_MEMORY_DEVICE_ERASE_SIZE         8192
-
+#define DRV_MEMORY_DEVICE_MEDIA_SIZE_BYTES   (DRV_MEMORY_DEVICE_MEDIA_SIZE * 1024U)
+#define DRV_MEMORY_DEVICE_PROGRAM_SIZE       512U
+#define DRV_MEMORY_DEVICE_ERASE_SIZE         8192U
 /* Memory Driver Instance 1 RTOS Configurations*/
-#define DRV_MEMORY_STACK_SIZE_IDX1           1024
-#define DRV_MEMORY_PRIORITY_IDX1             1
-#define DRV_MEMORY_RTOS_DELAY_IDX1                         10
+#define DRV_MEMORY_STACK_SIZE_IDX1               1024
+#define DRV_MEMORY_PRIORITY_IDX1                 1
+#define DRV_MEMORY_RTOS_DELAY_IDX1               10U
 
 
 /* Memory Driver Instance 0 Configuration */
 #define DRV_MEMORY_INDEX_0                   0
 #define DRV_MEMORY_CLIENTS_NUMBER_IDX0       1
-
 /* Memory Driver Instance 0 RTOS Configurations*/
-#define DRV_MEMORY_STACK_SIZE_IDX0           1024
-#define DRV_MEMORY_PRIORITY_IDX0             1
-#define DRV_MEMORY_RTOS_DELAY_IDX0                         10
+#define DRV_MEMORY_STACK_SIZE_IDX0               1024
+#define DRV_MEMORY_PRIORITY_IDX0                 1
+#define DRV_MEMORY_RTOS_DELAY_IDX0               10U
 
 
 
