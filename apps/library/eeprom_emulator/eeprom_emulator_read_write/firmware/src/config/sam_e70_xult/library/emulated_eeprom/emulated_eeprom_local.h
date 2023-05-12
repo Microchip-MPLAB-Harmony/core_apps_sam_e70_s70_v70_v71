@@ -39,8 +39,8 @@
 *******************************************************************************/
 //DOM-IGNORE-END
 
-#ifndef _EEPROM_EMULATOR_LOCAL_H
-#define _EEPROM_EMULATOR_LOCAL_H
+#ifndef EEPROM_EMULATOR_LOCAL_H
+#define EEPROM_EMULATOR_LOCAL_H
 
 #include "emulated_eeprom_definitions.h"
 #include "osal/osal.h"
@@ -49,16 +49,19 @@
 extern "C" {
 #endif
 
+/* MISRA C-2012 Rule 5.4 deviated:2 Deviation record ID -  H3_MISRAC_2012_R_5_4_DR_1 */
 #define EEPROM_EMULATOR_ROW_SIZE                                8192
-#define EEPROM_EMULATOR_PAGES_PER_ROW                           16
-#define EEPROM_EMULATOR_PAGE_SIZE                               512
-#define EEPROM_EMULATOR_INVALID_PAGE_NUMBER                     0xFFFF
-#define EEPROM_EMULATOR_INVALID_ROW_NUMBER                      0xFFFF
-#define EEPROM_EMULATOR_HEADER_SIZE                             4
-#define EEPROM_EMULATOR_NUM_PHYSICAL_PAGES                      32
-#define EEPROM_EMULATOR_NUM_LOGICAL_PAGES                       8
+#define EEPROM_EMULATOR_PAGES_PER_ROW                           16U
+#define EEPROM_EMULATOR_PAGE_SIZE                               512U
+#define EEPROM_EMULATOR_INVALID_PAGE_NUMBER                     0xFFFFU
+#define EEPROM_EMULATOR_INVALID_ROW_NUMBER                      0xFFFFU
+#define EEPROM_EMULATOR_HEADER_SIZE                             4U
+#define EEPROM_EMULATOR_NUM_PHYSICAL_PAGES                      32U
+#define EEPROM_EMULATOR_NUM_LOGICAL_PAGES                       8U
 #define EEPROM_EMULATOR_LOGICAL_SIZE_BYTES                      4064
 #define EEPROM_EMULATOR_NUM_LOGICAL_PAGES_PER_ROW               (EEPROM_EMULATOR_PAGES_PER_ROW>>1)
+
+/* MISRAC 2012 deviation block end */
 
 #define EEPROM_EMULATOR_EEPROM_START_ADDRESS                   0x5FC000
 
@@ -95,7 +98,7 @@ typedef struct
     bool initialized;
 
     /** Absolute byte pointer to the first byte of FLASH where the emulated EEPROM is stored. */
-    const EEPROM_PAGE* main_array;
+    EEPROM_PAGE* main_array;
 
     /** Mapping array from logical EEPROM pages to physical FLASH pages. */
     uint8_t page_map[EEPROM_EMULATOR_NUM_LOGICAL_PAGES];
@@ -124,4 +127,4 @@ typedef struct
 }
 #endif
 
-#endif /* _EEPROM_EMULATOR_LOCAL_H */
+#endif /* EEPROM_EMULATOR_LOCAL_H */
