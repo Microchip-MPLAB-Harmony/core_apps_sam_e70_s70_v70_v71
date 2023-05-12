@@ -1,20 +1,23 @@
-/*******************************************************************************
-  NVIC PLIB Implementation
+/******************************************************************************
+  SD Card (SPI) Driver File System Interface Implementation
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    plib_nvic.c
+    drv_sdspi_file_system.h
 
   Summary:
-    NVIC PLIB Source File
+    SD Card (SPI) Driver Interface Definition
 
   Description:
-    None
-
+    The SD Card Driver provides a interface to access the SD Card. This file
+    implements the SD Card Driver file system interface.
+    This file should be included in the project if SD Card driver functionality
+    with File system is needed.
 *******************************************************************************/
 
+// DOM-IGNORE-BEGIN
 /*******************************************************************************
 * Copyright (C) 2018 Microchip Technology Inc. and its subsidiaries.
 *
@@ -36,76 +39,42 @@
 * FULLEST EXTENT ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON ALL CLAIMS IN
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
-*******************************************************************************/
+ *******************************************************************************/
+// DOM-IGNORE-END
+#ifndef DRV_SDSPI_FILE_SYSTEM_H
+#define DRV_SDSPI_FILE_SYSTEM_H
 
-#include "device.h"
-#include "plib_nvic.h"
+// *****************************************************************************
+// *****************************************************************************
+// Section: Include Files
+// *****************************************************************************
+// *****************************************************************************
+
+#include "driver/sdspi/drv_sdspi.h"
+#include "system/fs/sys_fs_media_manager.h"
+
+// DOM-IGNORE-BEGIN
+#ifdef __cplusplus  // Provide C++ Compatibility
+    extern "C" {
+#endif
+// DOM-IGNORE-END
+// *****************************************************************************
+// *****************************************************************************
+// Section: Global objects
+// *****************************************************************************
+// *****************************************************************************
 
 
 // *****************************************************************************
 // *****************************************************************************
-// Section: NVIC Implementation
+// Section: MEMORY Driver File system interface Routines
 // *****************************************************************************
 // *****************************************************************************
 
-void NVIC_Initialize( void )
-{
-    /* Priority 0 to 7 and no sub-priority. 0 is the highest priority */
-    NVIC_SetPriorityGrouping( 0x00 );
+void DRV_SDSPI_RegisterWithSysFs( const SYS_MODULE_INDEX drvIndex);
 
-    /* Enable NVIC Controller */
-    __DMB();
-    __enable_irq();
-
-    /* Enable the interrupt sources and configure the priorities as configured
-     * from within the "Interrupt Manager" of MHC. */
-    NVIC_SetPriority(SysTick_IRQn, 7);
-    NVIC_SetPriority(SPI0_IRQn, 7);
-    NVIC_EnableIRQ(SPI0_IRQn);
-    NVIC_SetPriority(TC0_CH0_IRQn, 7);
-    NVIC_EnableIRQ(TC0_CH0_IRQn);
-    NVIC_SetPriority(XDMAC_IRQn, 7);
-    NVIC_EnableIRQ(XDMAC_IRQn);
-
-    /* Enable Usage fault */
-    SCB->SHCSR |= (SCB_SHCSR_USGFAULTENA_Msk);
-    /* Trap divide by zero */
-    SCB->CCR   |= SCB_CCR_DIV_0_TRP_Msk;
-
-    /* Enable Bus fault */
-    SCB->SHCSR |= (SCB_SHCSR_BUSFAULTENA_Msk);
-
-    /* Enable memory management fault */
-    SCB->SHCSR |= (SCB_SHCSR_MEMFAULTENA_Msk);
-
+#ifdef __cplusplus
 }
+#endif
 
-void NVIC_INT_Enable( void )
-{
-    __DMB();
-    __enable_irq();
-}
-
-bool NVIC_INT_Disable( void )
-{
-    bool processorStatus = (__get_PRIMASK() == 0U);
-
-    __disable_irq();
-    __DMB();
-
-    return processorStatus;
-}
-
-void NVIC_INT_Restore( bool state )
-{
-    if( state == true )
-    {
-        __DMB();
-        __enable_irq();
-    }
-    else
-    {
-        __disable_irq();
-        __DMB();
-    }
-}
+#endif //#ifndef DRV_SDSPI_FILE_SYSTEM_H
