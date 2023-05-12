@@ -52,6 +52,7 @@
 
 #include "configuration.h"
 #include "definitions.h"
+#include "sys_tasks.h"
 
 
 // *****************************************************************************
@@ -62,23 +63,23 @@
 /* Handle for the APP1_Tasks. */
 TaskHandle_t xAPP1_Tasks;
 
-void _APP1_Tasks(  void *pvParameters  )
+static void lAPP1_Tasks(  void *pvParameters  )
 {   
-    while(1)
+    while(true)
     {
         APP1_Tasks();
-        vTaskDelay(5 / portTICK_PERIOD_MS);
+        vTaskDelay(5U / portTICK_PERIOD_MS);
     }
 }
 /* Handle for the APP2_Tasks. */
 TaskHandle_t xAPP2_Tasks;
 
-void _APP2_Tasks(  void *pvParameters  )
+static void lAPP2_Tasks(  void *pvParameters  )
 {   
-    while(1)
+    while(true)
     {
         APP2_Tasks();
-        vTaskDelay(5 / portTICK_PERIOD_MS);
+        vTaskDelay(5U / portTICK_PERIOD_MS);
     }
 }
 
@@ -111,7 +112,7 @@ void SYS_Tasks ( void )
 
     /* Maintain the application's state machine. */
         /* Create OS Thread for APP1_Tasks. */
-    xTaskCreate((TaskFunction_t) _APP1_Tasks,
+    (void) xTaskCreate((TaskFunction_t) lAPP1_Tasks,
                 "APP1_Tasks",
                 1024,
                 NULL,
@@ -119,7 +120,7 @@ void SYS_Tasks ( void )
                 &xAPP1_Tasks);
 
     /* Create OS Thread for APP2_Tasks. */
-    xTaskCreate((TaskFunction_t) _APP2_Tasks,
+    (void) xTaskCreate((TaskFunction_t) lAPP2_Tasks,
                 "APP2_Tasks",
                 1024,
                 NULL,
