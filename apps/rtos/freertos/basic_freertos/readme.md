@@ -95,6 +95,6 @@ The following table shows the target hardware for the application projects.
 
 | Board | LED Name | Switch Name |
 | ----- | -------- | -------- |
-|  [SAM E70 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/DM320113) | LED1 | SW0 |
+|  [SAM E70 Xplained Ultra Evaluation Kit](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/DM320113) | LED1 | SW1 |
 |  [SAM V71 Xplained Ultra Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamv71-xult) | LED0 | SW0 |
 |||
