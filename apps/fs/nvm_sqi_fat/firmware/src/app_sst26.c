@@ -81,7 +81,7 @@
     Application strings and buffers are be defined outside this structure.
 */
 
-static APP_SST26_DATA CACHE_ALIGN appSST26Data;
+APP_SST26_DATA CACHE_ALIGN appSST26Data;
 
 /* Work buffer used by FAT FS during Format */
 static uint8_t CACHE_ALIGN work[SYS_FS_FAT_MAX_SS];

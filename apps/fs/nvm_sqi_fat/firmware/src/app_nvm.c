@@ -114,7 +114,7 @@ static const uint8_t originalData[ORIG_DATA_SIZE] = "Data";
     Application strings and buffers are be defined outside this structure.
 */
 
-static APP_NVM_DATA CACHE_ALIGN appNvmData;
+APP_NVM_DATA CACHE_ALIGN appNvmData;
 
 
 // *****************************************************************************
