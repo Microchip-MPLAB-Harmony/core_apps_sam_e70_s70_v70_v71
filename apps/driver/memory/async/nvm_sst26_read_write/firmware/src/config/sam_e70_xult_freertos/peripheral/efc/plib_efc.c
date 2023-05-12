@@ -47,7 +47,7 @@ It allows user to Program, Erase and lock the on-chip FLASH memory.
 
 static uint32_t efc_status = 0;
 
-static EFC_OBJECT efc;
+volatile static EFC_OBJECT efc;
 
 void EFC_Initialize(void)
 {
@@ -209,12 +209,15 @@ void EFC_CallbackRegister( EFC_CALLBACK callback, uintptr_t context )
     efc.context = context;
 }
 
-void EFC_InterruptHandler( void )
+void __attribute__((used)) EFC_InterruptHandler( void )
 {
+    uintptr_t context_var;
+
     uint32_t ul_fmr = EFC_REGS->EEFC_FMR;
     EFC_REGS->EEFC_FMR = ( ul_fmr & (~EEFC_FMR_FRDY_Msk));
     if(efc.callback != NULL)
-        {
-            efc.callback(efc.context);
-        }
+    {
+        context_var = efc.context;
+        efc.callback(context_var);
+    }
 }
