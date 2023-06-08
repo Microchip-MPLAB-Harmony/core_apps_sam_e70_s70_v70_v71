@@ -48,6 +48,7 @@
           <itemPath>../src/config/sam_v71_xult/configuration.h</itemPath>
           <itemPath>../src/config/sam_v71_xult/interrupts.h</itemPath>
           <itemPath>../src/config/sam_v71_xult/device_vectors.h</itemPath>
+          <itemPath>../src/config/sam_v71_xult/sys_tasks.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="f2" displayName="FreeRTOS" projectFiles="true">
@@ -211,19 +212,6 @@
       <itemPath>../src/task4.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="true">
-      <logicalFolder name="f1" displayName="sam_v71_xult.mhc" projectFiles="true">
-        <itemPath>../src/config/sam_v71_xult/sam_v71_xult.mhc/BSP_SAM_V71_Xplained_Ultra.yml</itemPath>
-        <itemPath>../src/config/sam_v71_xult/sam_v71_xult.mhc/cmsis.yml</itemPath>
-        <itemPath>../src/config/sam_v71_xult/sam_v71_xult.mhc/core.yml</itemPath>
-        <itemPath>../src/config/sam_v71_xult/sam_v71_xult.mhc/dfp.yml</itemPath>
-        <itemPath>../src/config/sam_v71_xult/sam_v71_xult.mhc/efc.yml</itemPath>
-        <itemPath>../src/config/sam_v71_xult/sam_v71_xult.mhc/FreeRTOS.yml</itemPath>
-        <itemPath>../src/config/sam_v71_xult/sam_v71_xult.mhc/GraphSettings.yml</itemPath>
-        <itemPath>../src/config/sam_v71_xult/sam_v71_xult.mhc/HarmonyCore.yml</itemPath>
-        <itemPath>../src/config/sam_v71_xult/sam_v71_xult.mhc/project.yml</itemPath>
-        <itemPath>../src/config/sam_v71_xult/sam_v71_xult.mhc/settings.yml</itemPath>
-        <itemPath>../src/config/sam_v71_xult/sam_v71_xult.mhc/usart1.yml</itemPath>
-      </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/sam_v71_xult/harmony-manifest-success.yml</itemPath>
       <itemPath>basic_freertos_sam_v71_xult.mc3</itemPath>

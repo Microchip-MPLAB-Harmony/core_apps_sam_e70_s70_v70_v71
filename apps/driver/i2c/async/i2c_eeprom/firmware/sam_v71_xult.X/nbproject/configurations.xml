@@ -63,6 +63,7 @@
           <itemPath>../src/config/sam_v71_xult/configuration.h</itemPath>
           <itemPath>../src/config/sam_v71_xult/interrupts.h</itemPath>
           <itemPath>../src/config/sam_v71_xult/device_vectors.h</itemPath>
+          <itemPath>../src/config/sam_v71_xult/sys_tasks.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="f2" displayName="packs" projectFiles="true">
